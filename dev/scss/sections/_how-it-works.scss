@@ -1,0 +1,394 @@
+/*--------------------------------------
+	Section: How It Works
+--------------------------------------*/
+
+// Notes...
+
+
+.s-how-it-works {
+
+	padding: 0 20px;
+	background: rgb(245, 244, 243);
+	border-top: 1px solid rgb(232, 230, 228);
+	border-bottom: 1px solid rgb(232, 230, 228);
+
+	// If the section just has a white background...
+
+	&.s-how-it-works--no-background {
+
+		background: $white;
+
+	}
+
+	@media screen and (min-width: 360px) {
+
+		padding: 0 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+}
+
+	.s-how-it-works__inner-wrap {
+
+		padding: 71px 0 85px 0;
+
+		@media screen and (min-width: 1000px) {
+
+			padding: 71px 0 105px 0;
+
+		}
+
+	}
+
+		.c-how-it-works {
+
+			width: 100%;
+			max-width: 690px;
+			margin: 0 auto;
+
+			// If a description is available...
+
+			&.c-how-it-works--has-description {}
+
+			// If using icons in place of numbered list items...
+
+			&.c-how-it-works--has-icons {
+
+				max-width: 1050px;
+
+			}
+
+		}
+
+			.c-how-it-works__header {
+
+				margin: 0;
+				letter-spacing: 0.19px;
+				color: $color-secondary-blue;
+
+				.c-how-it-works--has-icons & {
+
+					@include font-size(32);
+					line-height: (42/32);
+					letter-spacing: 0.20px;
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					@include font-size(32);
+					line-height: (42/32);
+					text-align: center;
+
+				}
+
+			}
+
+			.c-how-it-works__description {
+
+				margin: ((8 / 18) + em) 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((3 / 18) + em) 0 0 0;
+					text-align: center;
+
+				}
+
+			}
+
+			.c-how-it-works__list {
+
+				margin: ((66 / 18) + em) 0 0 0;
+				padding: 0;
+				list-style: none;
+				counter-reset: item;
+
+				// If a description is available...
+
+				.c-how-it-works--has-description & {
+
+					margin: ((62 / 18) + em) 0 0 0;
+
+				}
+
+				.c-how-it-works--has-icons & {
+
+					margin: ((49 / 18) + em) 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: space-between;
+						align-items: flex-start;
+						align-content: flex-start;
+						margin: ((103 / 18) + em) 0 0 0;
+
+					}
+
+				}
+
+				// Home page displays in a horiztonal layout on larger screen views...
+
+				&.c-how-it-works__list--has-horizontal-layout {}
+
+			}
+
+				.c-how-it-works__item {
+
+					position: relative;
+					margin: 0 0 ((53 / 18) + em) 0;
+					padding: 0 0 0 70px;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 0 ((39 / 18) + em) 0;
+						padding: 0 0 0 110px;
+
+					}
+
+					.c-how-it-works--has-description & {
+
+						margin: 0 0 ((29 / 18) + em) 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: 0 0 ((40 / 18) + em) 0;
+
+						}
+
+					}
+
+					.c-how-it-works--has-icons & {
+
+						margin: 0 0 ((39 / 18) + em) 0;
+						padding: 0;
+
+						@media screen and (min-width: 1000px) {
+
+							width: calc(33.333333333% - 52px);
+							margin: 0;
+
+						}
+
+					}
+
+					&:before {
+
+						content: counter(item) "";
+						counter-increment: item;
+						position: absolute;
+						left: 0;
+						top: -11px;
+						display: block;
+						width: 50px;
+						height: 50px;
+						padding: 10px 0 0 0;
+						@include font-size(22);
+						line-height: (22/22);
+						@include graphik-medium;
+						text-align: center;
+						color: $color-secondary-blue;
+						background: $white;
+						border-radius: 50%;
+						border: 3px solid $color-secondary-green;
+						z-index: 5;
+
+						.c-how-it-works--has-icons & {
+
+							content: none;
+
+						}
+
+						@media screen and (min-width: 1000px) {
+
+							top: -1px;
+							width: 60px;
+							height: 60px;
+							padding: 11px 0 0 0;
+							@include font-size(26);
+							line-height: (26/26);
+							border-width: 5px;
+
+						}
+
+					}
+
+					&:after {
+
+						content: "";
+						position: absolute;
+						left: 24px;
+						top: 0;
+						bottom: -50px;
+						width: 2px;
+						background: url(../img/vertical-dashes.svg);
+						z-index: 1;
+
+						.c-how-it-works--has-icons & {
+
+							content: none;
+
+						}
+
+						@media screen and (min-width: 1000px) {
+
+							left: 29px;
+							bottom: -60px;
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+						&:before {
+
+							// If the last numbered item needs to show a checkmark...
+
+							.c-how-it-works__list--has-last-checkmark & {
+
+								content: "";
+								background: $white url(../img/how-it-works-checkmark.svg) center center no-repeat;
+								background-size: 50px 50px;
+
+								@media screen and (min-width: 1000px) {
+
+									background-image: url(../img/how-it-works-checkmark-large.svg);
+									background-size: 60px 60px;
+
+								}
+
+							}
+
+						}
+
+						&:after {
+
+							content: none;
+
+						}
+
+					}
+
+					// Home page has icons...
+
+					&.c-how-it-works__item--has-icon {}
+
+				}
+
+					.c-how-it-works__icon {}
+
+						.c-how-it-works__image {
+
+							@media screen and (min-width: 1000px) {
+
+								margin: 0 auto;
+
+							}
+
+						}
+
+					.c-how-it-works__title {
+
+						margin: 0;
+						@include font-size(18);
+						line-height: (24/18);
+
+						.c-how-it-works--has-icons & {
+
+							margin: ((27 / 20) + em) 0 0 0;
+							@include font-size(20);
+							line-height: (28/20);
+							color: $color-secondary-green;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((37 / 26) + em) 0 0 0;
+								@include graphik-regular;
+								@include font-size(26);
+								line-height: (32/26);
+
+							}
+
+							&:before {
+
+								content: counter(item) "";
+								counter-increment: item;
+								position: relative;
+								top: -5px;
+								display: inline-block;
+								width: 30px;
+								margin: 0 8px 0 0;
+								padding: 0 0 2px 0;
+								@include graphik-bold;
+								text-align: center;
+								border-bottom: 3px solid $color-secondary-green;
+
+								@media screen and (min-width: 1000px) {
+
+									top: -8px;
+									margin: 0 20px 0 0;
+									@include font-size(20);
+									line-height: (28/20);
+
+								}
+
+							}
+
+						}
+
+					}
+
+					.c-how-it-works__detail {
+
+						margin: ((11 / 18) + em) 0 0 0;
+
+						// For section with description and checkmark
+
+						.c-how-it-works--has-description & {
+
+							margin: ((7 / 18) + em) 0 0 0;
+
+						}
+
+						.c-how-it-works--has-icons & {
+
+							margin: ((6 / 18) + em) 0 0 0;
+							color: $color-secondary-blue;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((23 / 18) + em) 0 0 0;
+
+							}
+
+						}
+
+						p {
+
+							&:last-of-type {
+
+								margin: 0;
+
+							}
+
+						}
+
+					}

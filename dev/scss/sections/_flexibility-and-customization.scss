@@ -1,0 +1,274 @@
+/*---------------------------------------------
+	Section: Flexibility and Customization
+---------------------------------------------*/
+
+// Notes...
+
+.s-flexibility-and-customization {
+
+	padding: 0 20px;
+
+	@media screen and (min-width: 360px) {
+
+		padding: 0 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+}
+
+	.s-flexibility-and-customization__inner-wrap {
+
+		padding: 72px 0 70px 0;
+
+		@media screen and (min-width: 1000px) {
+
+			padding: 73px 0 140px 0;
+
+		}
+
+	}
+
+		.c-flexibility-and-customization {}
+
+			.c-flexibility-and-customization__header {
+
+				margin: 0;
+				letter-spacing: 0.19px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					@include font-size(32);
+					line-height: (42/32);
+					text-align: center;
+
+				}
+
+			}
+
+			.c-flexibility-and-customization__description {
+
+				margin: ((20 / 18) + em) 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((4 / 18) + em) 0 0 0;
+					text-align: center;
+
+				}
+
+			}
+
+			.c-flexibility-and-customization__overview {
+
+				margin: 65px 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: center;
+					align-items: center;
+					align-content: flex-start;
+					margin: 63px 0 0 0;
+
+				}
+
+				&.c-flexibility-and-customization__overview--without-titles {
+
+					@media screen and (min-width: 1000px) {
+
+						// align-items: flex-end;
+
+					}
+
+				}
+
+			}
+
+				.c-flexibility-and-customization__image {}
+
+					.c-flexibility-and-customization__img {
+
+						margin: 0 auto;
+
+					}
+
+				.c-flexibility-and-customization__video {
+
+					width: 100%;
+					max-width: 520px;
+
+				}
+
+					.c-flexibility-and-customization__video-wrap {
+
+						position: relative;
+						width: 100%;
+						height: 0;
+						padding-top: 25px;
+						padding-bottom: 56.25%; // if 16x9
+						// padding-bottom: 75%; // if 4x3
+						// overflow: hidden;
+
+						iframe {
+
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 100% !important;
+							// max-width: 100% !important;
+							height: 100% !important;
+							z-index: 1;
+
+						}
+
+					}
+
+				.c-flexibility-and-customization__list {
+
+					margin: ((45 / 18) + em) 0 0 0;
+					padding: 0;
+					list-style: none;
+					counter-reset: item;
+
+					@media screen and (min-width: 1000px) {
+
+						width: 100%;
+						max-width: 312px;
+						margin: 0;
+
+					}
+
+					// Without titles...
+
+					&.c-flexibility-and-customization__list--without-titles {
+
+						@media screen and (min-width: 1000px) {
+
+							max-width: 340px;
+							padding-bottom: 16px;
+
+						}
+
+					}
+
+				}
+
+					.c-flexibility-and-customization__item {
+
+						position: relative;
+						margin: 0 0 ((13 / 18) + em) 0;
+						padding: 0 0 0 26px;
+
+						@media screen and (min-width: 1000px) {
+
+							padding: 0 0 0 18px;
+
+						}
+
+						.c-flexibility-and-customization__list--without-titles & {
+
+							margin: 0 0 ((28 / 18) + em) 0;
+							padding: 0;
+
+							@media screen and (min-width: 1000px) {
+
+								padding: 0 0 0 60px;
+
+							}
+
+						}
+
+						&:before {
+
+							content: counter(item) "";
+							counter-increment: item;
+							position: absolute;
+							left: 0;
+							top: 3px;
+							display: block;
+							width: 18px;
+							height: 18px;
+							padding: 3px 0 0 0;
+							@include font-size(10);
+							line-height: (12/10);
+							text-align: center;
+							color: $white;
+							background: $color-primary-blue;
+							border-radius: 10px;
+							z-index: 1;
+
+							@media screen and (min-width: 1000px) {
+
+								content: none;
+
+							}
+
+							.c-flexibility-and-customization__list--without-titles & {
+
+								content: none;
+
+							}
+
+						}
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+						.c-flexibility-and-customization__title {
+
+							margin: 0 0 ((6 / 18) + em) 0;
+							@include font-size(18);
+							line-height: (24/18);
+
+							.c-flexibility-and-customization__list--without-titles & {
+
+								margin: 0 0 ((6 / 12) + em) 0;
+								@include font-size(12);
+								line-height: (14/12);
+								letter-spacing: 0.20px;
+								text-transform: uppercase;
+								color: $color-primary-blue;
+
+								&:after {
+
+									content: counter(item) "";
+									counter-increment: item;
+
+								}
+
+							}
+
+						}
+
+						.c-flexibility-and-customization__detail {
+
+							p {
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+							}
+
+						}

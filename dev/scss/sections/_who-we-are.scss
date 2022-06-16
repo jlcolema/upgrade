@@ -1,0 +1,120 @@
+	/* Who We Are */
+
+	.s-who-we-are {
+
+		padding: 0 20px;
+		border-bottom: 1px solid $color-gray-03;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-who-we-are__inner-wrap {
+
+			padding: 80px 0 68px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 80px 0 100px 0;
+
+			}
+
+		}
+
+			.c-who-we-are {}
+
+				.c-who-we-are__header {
+
+					margin: 0;
+					letter-spacing: 0.19px;
+					text-align: center;
+					color: $color-secondary-blue;
+
+					@media screen and (min-width: 1000px) {
+
+						@include font-size(32);
+						line-height: (42/32);
+
+					}
+
+				}
+
+				.c-who-we-are__overview {
+
+					width: 100%;
+					max-width: 1000px;
+					margin: 0 auto;
+
+					@media screen and (min-width: 1000px) {
+
+						display: flex;
+						flex-wrap: nowrap;
+						justify-content: space-between;
+						align-items: center;
+						align-content: flex-start;
+						margin: 116px auto 0 auto;
+
+					}
+
+				}
+
+					.c-who-we-are__logo {
+
+						width: 100%;
+						max-width: 234px;
+						margin: 83px auto 44px auto;
+
+						@media screen and (min-width: 1000px) {
+
+							width: 254px;
+							max-width: none;
+							margin: 0;
+
+						}
+
+						svg {
+
+							@media screen and (min-width: 1000px) {
+
+								width: 254px;
+								height: auto;
+
+							}
+
+						}
+
+					}
+
+					.c-who-we-are__mission-statement {
+
+						@media screen and (min-width: 1000px) {
+
+							padding: 0 0 0 74px;
+
+						}
+
+						p {
+
+							margin: 0 0 ((24 / 18) + em) 0;
+
+							&:last-of-type {}
+
+						}
+
+					}

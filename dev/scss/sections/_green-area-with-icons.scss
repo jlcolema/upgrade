@@ -1,0 +1,167 @@
+/*--------------------------------------
+	Section: Green Area with Icons
+--------------------------------------*/
+
+// Notes...
+
+	.s-green-area {
+
+		padding: 0 20px;
+		color: $white;
+		background: $color-primary-green;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-green-area__inner-wrap {
+
+			padding: 71px 0 80px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 51px 0 49px 0;
+
+			}
+
+		}
+
+			.c-green-area {
+
+				width: 100%;
+				max-width: 1090px;
+				margin: 0 auto;
+
+			}
+
+				.c-green-area__header {
+
+					margin: 0;
+					@include font-size(32);
+					line-height: (42/32);
+
+					@media screen and (min-width: 1000px) {
+
+						text-align: center;
+
+					}
+
+				}
+
+				.c-green-area__subhead {
+
+					width: 100%;
+					max-width: 900px;
+					margin: ((16 / 18) + em) 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: ((19 / 18) + em) auto 0 auto;
+						text-align: center;
+
+					}
+
+				}
+
+				.c-green-area__list {
+
+					margin: 52px 0 0 0;
+					padding: 0;
+					list-style: none;
+
+					@media screen and (min-width: 1000px) {
+
+						display: flex;
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: flex-start;
+						align-content: flex-start;
+						margin: 102px 0 0 0;
+
+					}
+
+				}
+
+					.c-green-area__item {
+
+						margin: 0 0 56px 0;
+
+						@media screen and (min-width: 1000px) {
+
+							width: calc(33.333333333% - 36px);
+							margin: 0 0 76px 0;
+
+						}
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+						.c-green-area__icon {}
+
+							.c-green-area__image {}
+
+						.c-green-area__title {
+
+							margin: ((25 / 18) + em) 0 0 0;
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-bold;
+
+						}
+
+						.c-green-area__detail {
+
+							margin: ((17 / 18) + em) 0 0 0;
+
+							p {
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+							}
+
+							ul {
+
+								margin: ((24 / 18) + em) 0 0 0;
+								padding: 0;
+								list-style: none;
+
+								li {
+
+									&:before {
+
+										content: "\002D";
+										margin: 0 3px 0 0;
+
+									}
+
+								}
+
+							}
+
+						}

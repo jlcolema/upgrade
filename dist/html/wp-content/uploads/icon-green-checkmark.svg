@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="30px" viewBox="0 0 28 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-green-checkmark</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-green-checkmark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-16" transform="translate(2.000000, 2.000000)">
+            <g id="Group-10" transform="translate(1.000000, 6.000000)"></g>
+            <g id="Icon" stroke="#21C07D" stroke-linecap="round" stroke-width="3">
+                <path d="M12.3565385,24.6794872 C19.0828205,24.6794872 24.5360256,19.2262821 24.5360256,12.5 C24.5360256,5.77371795 19.0828205,0.320512821 12.3565385,0.320512821 C5.63025641,0.320512821 0.177051282,5.77371795 0.177051282,12.5 C0.177051282,19.2262821 5.63025641,24.6794872 12.3565385,24.6794872 L12.3565385,24.6794872 Z" id="Stroke-202"></path>
+                <polyline id="Stroke-204" stroke-linejoin="round" points="7.3125641 12.1014744 10.7689744 15.6469872 17.5689744 9.23673077"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

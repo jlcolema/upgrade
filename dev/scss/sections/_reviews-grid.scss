@@ -1,0 +1,89 @@
+	/* Reviews (Grid) */
+
+	.s-reviews-grid {
+
+		padding: 0 20px;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-reviews-grid__inner-wrap {
+
+			padding: 150px 0 90px 0;
+
+		}
+
+			.c-reviews-grid {}
+
+				.c-reviews-grid__headline {
+
+					width: 100%;
+					max-width: 600px;
+					margin: 0 auto;
+					@include font-size(40);
+					line-height: (50/40);
+					@include graphik-black;
+					letter-spacing: 0.50px;
+					text-align: center;
+					color: $color-secondary-blue;
+
+					@media screen and (min-width: 360px) {
+
+						@include font-size(64);
+						line-height: (73/64);
+
+					}
+
+				}
+
+				.c-reviews-grid__subhead {
+
+					width: 100%;
+					max-width: 760px;
+					margin:((13 / 26) + em) auto 0 auto;
+					@include font-size(26);
+					line-height: (32/26);
+					letter-spacing: -0.16px;
+					text-align: center;
+					color: $color-secondary-blue;
+
+				}
+
+				.c-reviews-grid__widget {
+
+					width: 100%;
+					max-width: 1070px;
+					margin: 116px auto 0 auto;
+
+				}
+
+					.c-reviews-grid__trustpilot-widget {
+
+						iframe {
+
+							@media screen and (min-width: 1000px) {
+
+								height: 1230px !important;
+
+							}
+
+						}
+
+					}

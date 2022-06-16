@@ -1,0 +1,121 @@
+/*--------------------------------------
+   Mixins
+--------------------------------------*/
+
+// Notes...
+
+// Font Size
+
+@mixin font-size($font-size: 16) {
+
+	font-size: #{$font-size}px;
+	font-size: #{$font-size / 10}rem;
+
+}
+
+// Self-Clearing Elements
+
+@mixin group {
+
+	&:after {
+
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		font-size: 0;
+
+	}
+
+}
+
+// Image Replacement
+
+@mixin hide-text() {
+
+	text-indent: -9999px;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+
+// Need to Organize
+
+// Heading 1A
+
+// Font Name: Graphik Light
+// Font Size: 64px
+// Line Height: 73px
+// Letter Spacing: 0.5px
+// Color: #3f465e
+
+// Heading 1B
+
+// Font Name: Graphik Bold
+// Font Size: 64px
+// Line Height: 73px
+// Letter Spacing: 0.5px
+// Color: #3f465e
+
+// Heading 2A
+
+// Font Name: Graphik Light
+// Font Size: 32px
+// Line Height: 42px
+// Letter Spacing: 0.2px
+// Color: #3f465e
+
+// Heading 2B
+
+// Font Name: Graphik Medium
+// Font Size: 32px
+// Line Height: 42px
+// Letter Spacing: 0.2px
+// Color: #3f465e
+
+// Title 1
+
+// Font Name: Graphik Regular
+// Font Size: 26px
+// Line Height: 32px
+// Letter Spacing: 0
+
+// Title 2
+
+// Font Name: Graphik Medium
+// Font Size: 22px
+// Line Height: 28px
+// Letter Spacing: 0
+
+// Title 3
+
+// Font Name: Graphik Medium
+// Font Size: 18px
+// Line Height: 24px
+// Letter Spacing: 0
+
+// Body Text (the baseline text)
+
+// Font Name: Graphik Regular
+// Font Size: 18px
+// Line Height: 24px
+// Letter Spacing: 0
+// Color: #37383a
+
+// Italic Text
+
+// Font Name: Graphik Regular Italic
+// Font Size: 18px
+// Line Height: 24px
+// Letter Spacing: 0
+// Color: #3f465e
+
+// Legal Text
+
+// Font Name: Graphik Regular
+// Font Size: 14px
+// Line Height: 18px
+// Letter Spacing: 0
+// Color: #a8a8aa

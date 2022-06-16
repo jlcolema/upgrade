@@ -1,0 +1,253 @@
+/*--------------------------------------
+	Section: FAQs
+--------------------------------------*/
+
+// Notes...
+
+.s-faqs {
+
+	padding: 0 20px;
+	background: $color-secondary-blue;
+
+	@media screen and (min-width: 360px) {
+
+		padding: 0 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		background-image: url(../img/faqs-background.svg);
+		background-position: center top;
+		background-repeat: repeat;
+
+	}
+
+}
+
+	.s-faqs__inner-wrap {
+
+		width: 100%;
+		max-width: 1082px;
+		margin: 0 auto;
+		padding: 72px 0 126px 0;
+
+		@media screen and (min-width: 1000px) {
+
+			padding: 49px 0 73px 0;
+
+		}
+
+	}
+
+		.c-faqs__header {
+
+			margin: 0;
+			letter-spacing: 0.19px;
+			color: $white;
+
+			@media screen and (min-width: 1000px) {
+
+				@include font-size(32);
+				line-height: (42/32);
+				letter-spacing: 0.20px;
+				text-align: center;
+
+			}
+
+		}
+
+		.c-faqs__list {
+
+			margin: 62px 0 0 0;
+			padding: 0;
+			list-style: none;
+
+			@media screen and (min-width: 1000px) {
+
+				margin: 58px 0 0 0;
+				background: $white;
+				border: 1px solid $color-gray-04;
+
+			}
+
+			// For three-column views
+
+			&.c-faqs__list--has-three-columns {
+
+				@media screen and (min-width: 1000px) {
+
+					display: flex;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					align-items: stretch;
+					align-content: flex-start;
+					margin: 82px 0 0 0;
+					border: none;
+					background: none;
+
+				}
+
+			}
+
+		}
+
+			.c-faqs__item {
+
+				margin: 0 0 18px 0;
+				padding: 26px 22px 26px 22px;
+				color: $color-secondary-blue;
+				background: $white;
+				border: 1px solid $color-gray-04;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: 0;
+					padding: 26px 32px 19px 32px;
+					border: none;
+
+					&:last-of-type {
+
+						padding: 26px 32px 26px 32px;
+
+					}
+
+				}
+
+				// For items that display in three columns...
+
+				.c-faqs__list--has-three-columns & {
+
+					@media screen and (min-width: 1000px) {
+
+						width: calc(33.333333333% - 18px);
+						padding: 26px 22px 26px 22px;
+						border: 1px solid $color-gray-04;
+
+					}
+
+				}
+
+				&:last-of-type {
+
+					margin: 0;
+
+				}
+
+			}
+
+				.c-faqs__question {
+
+					margin: 0;
+					@include font-size(18);
+					line-height: (24/18);
+
+				}
+
+				.c-faqs__answer {
+
+					margin: ((25 / 18) + em) 0 0 0;
+
+					p {
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+		.c-faqs__contact-information {
+
+			margin: ((57 / 18) + em) 0 0 0;
+			color: $white;
+
+			@media screen and (min-width: 1000px) {
+
+				margin: ((68 / 18) + em) 0 0 0;
+				text-align: center;
+
+			}
+
+		}
+
+			.c-faqs__email {
+
+				@include graphik-medium;
+
+				&:before {
+
+					content: "";
+					display: block;
+					width: 24px;
+					height: 18px;
+					margin: 0 0 9px 0;
+					background: url(../img/support-email-icon.svg);
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 auto 9px auto;
+
+					}
+
+				}
+
+			}
+
+				.c-faqs__email-link {
+
+					color: $white;
+					text-decoration: none;
+
+					&:hover {
+
+						color: $color-primary-blue;
+
+					}
+
+				}
+
+			.c-faqs__tel {
+
+				margin: ((44 / 18) + em) 0 0 0;
+				@include graphik-medium;
+
+				&:before {
+
+					content: "";
+					display: block;
+					width: 25px;
+					height: 24px;
+					margin: 0 0 10px 0;
+					background: url(../img/support-telephone-icon.svg);
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 auto 10px auto;
+
+					}
+
+				}
+
+				span {
+
+					display: block;
+
+				}
+
+			}

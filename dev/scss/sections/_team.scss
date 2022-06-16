@@ -1,0 +1,499 @@
+	/* Team */
+
+	.s-team {
+
+		height: 0;
+		padding: 0 20px;
+		overflow: hidden;
+		opacity: 0;
+		transition: height 1.5s ease-in-out, opacity 1.5s ease-in-out;
+
+		&.s-team--is-visible {
+
+			height: auto;
+			overflow: visible;
+			opacity: 1;
+			border-bottom: 1px solid $color-gray-03;
+
+		}
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-team__inner-wrap {
+
+			padding: 35px 0 108px 0;
+
+		}
+
+			.c-team {}
+
+				.c-team__executive {}
+
+				.c-team__board {
+
+					margin: 89px 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 95px 0 0 0;
+
+					}
+
+				}
+
+					.c-team__overview {
+
+						width: 100%;
+						max-width: 1020px;
+						margin: 0 auto;
+
+					}
+
+						.c-team__header {
+
+							margin: 0;
+							@include font-size(32);
+							line-height: (42/32);
+							letter-spacing: 0.20px;
+							text-align: center;
+							color: $color-secondary-blue;
+
+						}
+
+						.c-team__description {
+
+							margin: ((38 / 18) + em) 0 0 0;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((50 / 18) + em) 0 0 0;
+
+							}
+
+							p {
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+							}
+
+						}
+
+						.c-team__list {
+
+							display: flex;
+							flex-wrap: nowrap;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+							align-content: flex-start;
+							width: 100%;
+							max-width: 944px;
+							margin: 50px auto 0 auto;
+							padding: 0;
+							list-style: none;
+
+							@media screen and (min-width: 1000px) {
+
+								flex-wrap: wrap;
+								flex-direction: row;
+								justify-content: space-between;
+								align-items: stretch;
+								margin: 55px auto 0 auto;
+
+							}
+
+							// For Board of Directors
+
+							.c-team__board & {
+
+								justify-content: flex-start;
+								align-items: flex-start;
+								max-width: 1020px;
+								margin: 32px auto 0 auto;
+
+								@media screen and (min-width: 1000px) {
+
+									flex-wrap: wrap;
+									flex-direction: row;
+									justify-content: space-between;
+									align-items: flex-start;
+									margin: 54px auto 0 auto;
+
+								}
+
+							}
+
+							// While viewing an individual in more detail...
+
+							&.c-team__list--is-viewing-bio {
+
+								background: pink;
+
+								.c-team__item {
+
+									display: none;
+
+								}
+
+								.c-team__item--is-active {
+
+									display: block;
+									width: 100%;
+									cursor: auto;
+
+								}
+
+							}
+
+						}
+
+							.c-team__item {
+
+								margin: 0 0 33px 0;
+								cursor: pointer;
+
+								@media screen and (min-width: 1000px) {
+
+									margin: 0 0 34px 0;
+
+								}
+
+								// For Board of Directors...
+
+								.c-team__board & {
+
+									width: 100%;
+									margin: 0;
+
+									@media screen and (min-width: 1000px) {
+
+										width: calc(33.333333333% - 26px);
+										margin: 0;
+
+									}
+
+								}
+
+								&:last-of-type {
+
+									margin: 0;
+
+									@media screen and (min-width: 1000px) {
+
+										margin: 0 0 34px 0;
+
+									}
+
+									// For Board of Directors...
+
+									.c-team__board & {
+
+										@media screen and (min-width: 1000px) {
+
+											margin: 0;
+
+										}
+
+									}
+
+								}
+
+							}
+
+								.c-team__item-wrap {
+
+									display: block;
+
+									// For Board of Directors...
+
+									.c-team__board & {
+
+										position: relative;
+										min-height: 110px;
+										padding: 16px 0 27px 0;
+										border-bottom: 1px solid $color-secondary-green;
+
+										&:after {
+
+											content: "";
+											position: absolute;
+											left: 0;
+											bottom: 0;
+											width: 0;
+											height: 3px;
+											background: $color-primary-green;
+											transition: width 0.20s ease-in-out;
+
+										}
+
+										&:hover {
+
+											&:after {
+
+												width: 100%;
+
+											}
+
+										}
+
+										@media screen and (min-width: 1000px) {
+
+											min-height: 106px;
+											padding: 16px 0 22px 0;
+
+										}
+
+									}
+
+									// While Board of Directors Bio is being viewed...
+									// Need to simplify this with the above few lines...
+
+									.c-team__board .c-team__item--is-active & {
+
+										height: auto;
+										padding: 0;
+										border: none;
+
+										&:after {
+
+											content: none;
+
+										}
+
+									}
+
+								}
+
+									.c-team__photo {
+
+										margin: 0 0 11px 0;
+
+									}
+
+									.c-team__name {
+
+										margin: 0;
+										@include font-size(18);
+										line-height: (24/18);
+										@include graphik-medium;
+										color: rgb(44, 181, 130);
+
+									}
+
+									.c-team__credentials {
+
+										margin: ((11 / 14) + em) 0 0 0;
+										@include font-size(14);
+										line-height: (16/14);
+										color: rgb(138, 138, 141);
+
+									}
+
+									.c-team__bio {
+
+										// display: none;
+
+										// .c-team__item--is-active & {
+
+										// 	display: block;
+
+										// }
+
+										p {
+
+											margin: 0 0 ((24 / 18) + em) 0;
+
+											&:last-of-type {
+
+												margin: 0;
+
+											}
+
+										}
+
+									}
+
+						.c-team__list-description {
+
+							display: none;
+							margin: 56px 0 0 0;
+							opacity: 0;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: 55px 0 0 0;
+
+							}
+
+							// Board of Directors
+
+							.c-team__board & {
+
+								margin: 53px 0 0 0;
+
+								@media screen and (min-width: 1000px) {
+
+									margin: 52px 0 0 0;
+
+								}
+
+							}
+
+						}
+
+							.c-team__member-detail {
+
+								width: 100%;
+								max-width: 1020px;
+								margin: 0 auto;
+
+								@media screen and (min-width: 1000px) {
+
+									display: flex;
+									flex-direction: row;
+									flex-wrap: nowrap;
+									justify-content: flex-start;
+									align-items: flex-start;
+									align-content: flex-start;
+
+								}
+
+								// Board of Directors
+
+								.c-team__board & {
+
+									max-width: 1040px;
+
+									@media screen and (min-width: 1000px) {
+
+										display: block;
+
+									}
+
+								}
+
+							}
+
+								.c-team__member-photo {
+
+									@media screen and (min-width: 1000px) {
+
+										width: 29.411764706%;
+
+									}
+
+								}
+
+									.c-team__photo {}
+
+								.c-team__member-body {
+
+									@media screen and (min-width: 1000px) {
+
+										width: 70.588235294%;
+										padding: 0 0 0 50px;
+
+										// Board of Directors
+
+										.c-team__board & {
+
+											width: 100%;
+											padding: 0;
+
+										}
+
+									}
+
+								}
+
+									.c-team__member-title {}
+
+										.c-team__name {}
+
+										.c-team__credentials {}
+
+									.c-team__bio {
+
+										margin: 42px 0 0 0;
+
+										@media screen and (min-width: 1000px) {
+
+											margin: 45px 0 0 0;
+
+										}
+
+										p {
+
+											&:last-of-type {
+
+												margin: 0;
+
+											}
+
+										}
+
+									}
+
+									.c-team__member-back-to {
+
+										margin: ((39 / 16) + em) 0 0 0;
+										@include font-size(16);
+										line-height: (20/16);
+										@include graphik-medium;
+										cursor: pointer;
+
+										@media screen and (min-width: 1000px) {
+
+											margin: ((24 / 16) + em) 0 0 0;
+
+										}
+
+									}
+
+										.c-team__member-back-to-link {
+
+											position: relative;
+											color: $color-secondary-blue;
+											text-decoration: none;
+
+											&:before {
+
+												content: "";
+												display: inline-block;
+												width: 25px;
+												height: 11px;
+												margin: 0 11px 0 0;
+												background: url(../img/back-to-arrow.svg);
+												z-index: 1;
+
+											}
+
+											span {
+
+												border-bottom: 1px solid $color-primary-blue;
+
+											}
+
+										}

@@ -1,0 +1,322 @@
+	/* Need to Name */
+
+	.s-need-to-name {
+
+		padding: 0 20px;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-need-to-name__inner-wrap {
+
+			padding: 60px 0 80px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 72px 0 136px 0;
+
+				.page-id-9.subnavigation-is-fixed &,
+				.single-loan.subnavigation-is-fixed & {
+
+					padding: 172px 0 136px 0;
+
+				}
+
+				// Quick fix for Personal Loans page...
+
+				.page-id-9 & {
+
+					padding: 52px 0 64px 0;
+
+				}
+
+				// Quick fix for Personal Loans page while subnavigation is fixed...
+
+				.page-id-9.subnavigation-is-fixed & {
+
+					padding: 152px 0 64px 0;
+
+				}
+
+			}
+
+		}
+
+			.c-need-to-name {
+
+				width: 100%;
+				max-width: 1090px;
+				margin: 0 auto;
+
+				&.c-need-to-name--is-loans-listing {
+
+					max-width: 920px;
+
+				}
+
+			}
+
+				.c-need-to-name__header {
+
+					margin: 0;
+					line-height: (38/30);
+					letter-spacing: 0.19px;
+					color: $color-secondary-blue;
+
+					@media screen and (min-width: 1000px) {
+
+						@include font-size(32);
+						line-height: (42/32);
+						text-align: center;
+
+					}
+
+				}
+
+				.c-need-to-name__description {
+
+					width: 100%;
+					max-width: 900px;
+					margin: 0.50em 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0.50em auto 0 auto;
+						text-align: center;
+
+					}
+
+				}
+
+				.c-need-to-name__list {
+
+					margin: ((79 / 18) + em) 0 0 0;
+					padding: 0;
+					list-style: none;
+
+					@media screen and (min-width: 1000px) {
+
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: space-between;
+						align-items: flex-start;
+						align-content: flex-start;
+
+						.c-need-to-name--is-loans-listing & {
+
+							flex-wrap: wrap;
+
+						}
+
+					}
+
+					.c-need-to-name--has-description & {
+
+						margin: ((34 / 18) + em) 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: ((56 / 18) + em) 0 0 0;
+
+						}
+
+					}
+
+					.c-need-to-name--is-loans-listing & {
+
+						margin: ((50 / 18) + em) 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: ((70 / 18) + em) 0 0 0;
+
+						}
+
+					}
+
+				}
+
+					.c-need-to-name__item {
+
+						margin: 0 0 ((50 / 18) + em) 0;
+
+						@media screen and (min-width: 1000px) {
+
+							width: calc(25% - 30px);
+							margin: 0;
+
+							.c-need-to-name--is-loans-listing & {
+
+								width: calc(50% - 100px);
+								margin: 0 0 ((46 / 18) + em) 0;
+
+								&:nth-child(3),
+								&:nth-child(4) {
+
+									margin: 0;
+
+								}
+
+							}
+
+						}
+
+						.c-need-to-name__list--has-three-columns & {
+
+							@media screen and (min-width: 1000px) {
+
+								width: calc(33.333333333% - 40px);
+
+							}
+
+						}
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+						.c-need-to-name__icon-title-wrap {
+
+							display: flex;
+							flex-direction: row;
+							flex-wrap: no-wrap;
+							justify-content: flex-start;
+							align-items: center;
+							align-content: flex-start;
+
+							@media screen and (min-width: 1000px) {
+
+								display: block;
+
+							}
+
+							.c-need-to-name--is-loans-listing & {
+
+								display: block;
+
+							}
+
+						}
+
+							.c-need-to-name__icon {}
+
+								.c-need-to-name__image {
+
+									// width: 25px;
+									// height: 25px;
+
+									.c-need-to-name--is-loans-listing & {}
+
+								}
+
+							.c-need-to-name__title {
+
+								margin: 0;
+								padding: 0 0 0 20px;
+								@include font-size(18);
+								line-height: (24/18);
+
+								@media screen and (min-width: 1000px) {
+
+									margin: ((28 / 18) + em) 0 0 0;
+									padding: 0;
+
+								}
+
+								.c-need-to-name--is-loans-listing & {
+
+									margin: ((25 / 18) + em) 0 0 0;
+									padding: 0;
+
+								}
+
+							}
+
+						.c-need-to-name__detail {
+
+							margin: ((13 / 18) + em) 0 0 0;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((10 / 18) + em) 0 0 0;
+
+							}
+
+							p {
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+							}
+
+							.c-need-to-name--is-loans-listing & {
+
+								margin: ((9 / 18) + em) 0 0 0;
+
+							}
+
+						}
+
+						.c-need-to-name__more {
+
+							display: block;
+							width: 100%;
+							max-width: 300px;
+							margin: ((13 / 18) + em) 0 0 0;
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-medium;
+							letter-spacing: 0.56px;
+							text-align: center;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((17 / 18) + em) 0 0 0;
+
+							}
+
+						}
+
+							.c-need-to-name__more-link {
+
+								display: block;
+								padding: ((13 / 18) + em);
+								color: $color-secondary-green;
+								text-decoration: none;
+								border: 2px solid $color-secondary-green;
+								border-radius: 3px;
+
+								&:hover {
+
+									color: $white;
+									background: $color-secondary-green;
+									border-color: rgba($color-secondary-blue, 0.08);
+
+								}
+
+							}

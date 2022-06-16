@@ -1,0 +1,134 @@
+	/* Our Offices */
+
+	.s-our-offices {
+
+		padding: 0 20px;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-our-offices__inner-wrap {
+
+			padding: 84px 0 112px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 80px 0 165px 0;
+
+			}
+
+		}
+
+			.c-our-offices {}
+
+				.c-our-offices__header {
+
+					margin: 0;
+					@include font-size(32);
+					line-height: (42/32);
+					letter-spacing: 0.20px;
+					text-align: center;
+					color: $color-secondary-blue;
+
+				}
+
+				.c-our-offices__list {
+
+					display: flex;
+					flex-wrap: nowrap;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					align-content: flex-start;
+					margin: 50px 0 0 0;
+					padding: 0;
+					list-style: none;
+
+					@media screen and (min-width: 1000px) {
+
+						flex-direction: row;
+						align-items: flex-end;
+						margin: 70px 0 0 0;
+
+					}
+
+				}
+
+				.c-our-offices__item {
+
+					margin: 0 0 86px 0;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 40px 0 0;
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					.c-our-offices__link {
+
+						display: block;
+						text-decoration: none;
+
+					}
+
+						.c-our-offices__img {
+
+							margin: 0 auto 0 auto;
+
+						}
+
+						.c-our-offices__name {
+
+							margin: ((21 / 18) + em) 0 0 0;
+							@include font-size(18);
+							line-height: (24/18);
+							letter-spacing: 0.56px;
+							text-align: center;
+							color: $color-secondary-green;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((27 / 18) + em) 0 0 0;
+
+							}
+
+						}
+
+						.c-our-offices__responsibility {
+
+							margin: ((-2 / 18) + em) 0 0 0;
+							text-align: center;
+							color: $color-secondary-gray;
+
+							@media screen and (min-width: 1000px) {
+
+								margin: ((0 / 18) + em) 0 0 0;
+
+							}
+
+						}

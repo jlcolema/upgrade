@@ -1,0 +1,483 @@
+/*--------------------------------------
+	Section: Check Your Rate
+--------------------------------------*/
+
+// Notes...
+
+.s-check-your-rate {
+
+	padding-top: 30px;
+	background: $color-secondary-green url(../img/check-your-rate-border.svg);
+
+}
+
+	.s-check-your-rate__inner-wrap {
+
+		padding: 0 20px;
+		background: $white;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.c-check-your-rate {
+
+			width: 100%;
+			max-width: 765px;
+			margin: 0 auto;
+			padding: 72px 0 94px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 103px 0 102px 0;
+
+			}
+
+		}
+
+			.c-check-your-rate__form {}
+
+				.c-check-your-rate__fieldset {}
+
+					.c-check-your-rate__legend {
+
+						@include font-size(28);
+						line-height: (42/28);
+						@include graphik-medium;
+						letter-spacing: 0.2px;
+						text-align: center;
+						color: $color-secondary-blue;
+
+						@media screen and (min-width: 1000px) {
+
+							@include font-size(26);
+							line-height: (32/26);
+							@include graphik-regular;
+							letter-spacing: 0;
+
+						}
+
+						span {
+
+							display: block;
+							margin: ((6 / 18) + em) 0 0 0;
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-regular;
+							letter-spacing: 0;
+
+							@media screen and (min-width: 1000px) {
+
+								display: inline;
+								margin: 0;
+								@include font-size(26);
+								line-height: (32/26);
+
+							}
+
+						}
+
+					}
+
+					.c-check-your-rate__fields {
+
+						margin: 24px 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							display: flex;
+							flex-direction: row;
+							flex-wrap: nowrap;
+							justify-content: flex-start;
+							align-items: flex-start;
+							align-content: flex-start;
+							margin: 27px 0 0 0;
+
+						}
+
+					}
+
+						.c-check-your-rate__list {
+
+							margin: 0;
+							padding: 0;
+							list-style: none;
+
+							@media screen and (min-width: 1000px) {
+
+								display: flex;
+								flex-direction: row;
+								flex-wrap: nowrap;
+								justify-content: flex-start;
+								align-items: flex-start;
+								align-content: flex-start;
+								width: 66.666666667%;
+
+							}
+
+						}
+
+							.c-check-your-rate__item {
+
+								position: relative;
+								margin: 0 0 4px 0;
+
+								@media screen and (min-width: 1000px) {
+
+									width: 50%;
+									margin: 0;
+
+								}
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+								// For Loan Amount Field
+
+								&.money {
+
+									&:before {
+
+										content: "$";
+										position: absolute;
+										left: 10px;
+										bottom: 12px;
+										@include font-size(24);
+										line-height: (30/24);
+										@include roboto-medium;
+										color: $color-primary-blue;
+
+									}
+
+								}
+
+							}
+
+								.c-check-your-rate__label {
+
+									position: absolute;
+									left: 12px;
+									top: 10px;
+									color: $color-secondary-blue;
+									z-index: 1;
+
+								}
+
+								.c-check-your-rate__input[type="tel"] {
+
+									@include font-size(22);
+									line-height: (28/22);
+									@include graphik-medium;
+									padding: 36px 10px 12px 27px;
+									color: $color-primary-blue;
+
+								}
+
+								.c-check-your-rate__select {}
+
+								.dropdown-options {
+
+									// display: none !important;
+
+								}
+
+							// For Dropdown
+
+							.c-check-your-rate .input.dropdown {
+
+								@media screen and (min-width: 1000px) {
+
+									width: calc(50% + 2px);
+
+								}
+
+							}
+
+							.c-check-your-rate .input.dropdown > a.current {
+
+								display: block;
+								width: 100%;
+								// min-width: 200px;
+								margin: 0;
+								@include font-size(22);
+								line-height: (28/22);
+								@include graphik-medium;
+								padding: 36px 36px 12px 10px;
+								text-decoration: none;
+								color: $color-primary-blue;
+								border: 2px solid $color-primary-green;
+								border-radius: 2px;
+								background: #fff;
+								transition: all .2s ease-in-out;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+
+								@media screen and (min-width: 1000px) {
+
+									border-bottom: none;
+									border-radius: 0;
+
+								}
+
+								.initial {
+
+									display: block;
+									height: 28px;
+
+								}
+
+							}
+
+							.c-check-your-rate .input.dropdown > a.current.active,
+							.c-check-your-rate .input.dropdown > a.current:active,
+							.c-check-your-rate .input.dropdown > a.current:focus {
+
+								border: 2px solid $color-primary-blue;
+								box-shadow: 0 0 5px $color-primary-blue;
+
+							}
+
+							.c-check-your-rate .input.dropdown > a.current:focus {
+
+								outline: none;
+							}
+
+							.c-check-your-rate .input.dropdown > a.current > span {
+
+								font-size: inherit;
+								font-weight: 400;
+								color: #c4c9d8;
+
+							}
+
+							@media (min-width: 1000px) {
+
+								.c-check-your-rate .input.dropdown > a.current {
+
+									border-right: 0;
+									border-bottom: 2px solid $color-primary-green;
+
+								}
+
+							}
+
+							.c-check-your-rate .input.dropdown .arrow-marker {
+
+								position: absolute;
+								right: 16px;
+								bottom: 23px;
+								width: 11px;
+								height: 8px;
+								background: url(../img/dropdown-arrow.svg);
+
+							}
+
+							.c-check-your-rate .input.dropdown .arrow-marker > img {
+
+								width: 100%;
+								vertical-align: top;
+
+							}
+
+							.c-check-your-rate .input.dropdown select {
+
+								// display: none;
+								position: absolute;
+								top: 0;
+								z-index: -1;
+								visibility: visible;
+
+							}
+
+							.c-check-your-rate .dropdown-options {
+
+								position: absolute;
+								top: calc(100% + 3px);
+								display: none;
+								width: 100%;
+								max-height: 300px;
+								margin: 0;
+								padding: 0;
+								list-style-type: none;
+								text-align: left;
+								border: 1px solid $color-primary-blue;
+								border-radius: 3px;
+								background: #fff;
+								box-shadow: 0 0 7px $color-primary-blue;
+								overflow-y: auto;
+								z-index: 10;
+
+								li {
+
+									margin: 0;
+									padding: 0;
+									@include font-size(16);
+									line-height: (18/16);
+									border-bottom: 1px solid #e7e5e3;
+
+									&:last-of-type {
+
+										border: none;
+
+									}
+
+								}
+
+									a {
+
+										display: block;
+										padding: 15px 18px;
+										text-decoration: none;
+										color: $color-secondary-blue;
+										cursor: pointer;
+
+									}
+
+							}
+
+
+							.c-check-your-rate .dropdown:not(.no-hover) ul.dropdown-options a:hover,
+							.c-check-your-rate ul.dropdown-options a:focus {
+
+								color: #fff;
+								background: $color-primary-blue;
+
+							}
+
+							@media (min-width: 1000px) {
+
+								.c-check-your-rate > form .controls .input.dropdown {
+
+									margin-top: auto;
+									margin-left: -2px;
+
+								}
+
+							}
+
+							// For Errors
+
+							.c-check-your-rate__error {
+
+								display: block;
+								opacity: 1;
+								transition: opacity .25s ease-in-out;
+								position: absolute;
+								font-size: 12px;
+								line-height: 16px;
+								background: transparent;
+								margin: 0;
+								padding: 5px 0 0 25px;
+								text-align: left;
+								border: 0 none;
+								color: #e37169;
+
+								&:before {
+
+									content: "__ ";
+									position: absolute;
+									margin-left: -15px;
+									margin-top: -5px;
+
+								}
+
+								&.hidden-error {
+
+									opacity: 0;
+
+								}
+
+							}
+
+						.c-check-your-rate__button {
+
+							display: block;
+							width: 100%;
+							margin: 4px 0 0 0;
+							padding: ((26 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-medium;
+							text-align: center;
+							color: $white;
+							background: $color-primary-green;
+							border: 2px solid rgba(63, 70, 94, 0.08);
+							border-radius: 2px;
+							text-decoration: none;
+							outline: none;
+
+							@media screen and (min-width: 1000px) {
+
+								width: 33.333333333%; // 1/3
+								margin: 0;
+								border-radius: 0 2px 2px 0;
+
+							}
+
+							&:active,
+							&:focus,
+							&:hover {
+
+								background: $color-secondary-green;
+
+							}
+
+						}
+
+				.c-check-your-rate__email {
+
+					margin: ((19 / 16) + em) 0 0 0;
+					@include font-size(16);
+					line-height: (20/16);
+					@include graphik-medium;
+					letter-spacing: 0.5px;
+					text-align: center;
+
+					&:before {
+
+						content: "";
+						position: relative;
+						top: 2px;
+						display: inline-block;
+						width: 22px;
+						height: 15px;
+						margin: 0 4px 0 0;
+						background: url(../img/check-your-rate-mail-icon.svg);
+
+					}
+
+				}
+
+					.c-check-your-rate__email-link {
+
+						color: $color-secondary-blue;
+						border-bottom: 1px solid $color-primary-blue;
+						text-decoration: none;
+
+						&:hover {
+
+							color: $color-primary-blue;
+
+						}
+
+					}

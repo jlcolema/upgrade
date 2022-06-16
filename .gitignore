@@ -1,0 +1,68 @@
+
+# Ignore OS generated files.
+
+.DS_Store
+
+# Title
+
+dev/_backup/
+dev/_design/
+dev/_documents/
+
+# Ignore node dependency directories (used by Gulp).
+
+node_modules/
+
+# Ignore editor files.
+
+*.sublime-project
+*.sublime-workspace
+
+# Ignore everything in the root except the 'wp-content' directory.
+
+dist/html/*
+
+!dist/html/wp-content/
+
+# Ignore everything in the 'wp-content' directory, except the 'mu-plugins', plugins', 'themes', and 'uploads' directories.
+
+dist/html/wp-content/*
+
+!dist/html/wp-content/mu-plugins/
+!dist/html/wp-content/plugins/
+!dist/html/wp-content/themes/
+!dist/html/wp-content/uploads/
+
+# Ignore everything in the 'mu-plugins', and plugins' directories, except the plugins you specify (see the commented-out examples for hints on how to do this).
+
+dist/html/wp-content/mu-plugins/*
+dist/html/wp-content/plugins/*
+
+# Ignore everything in the 'themes' directory, except the themes you specify (see the commented-out example for a hint on how to do this).
+
+dist/html/wp-content/themes/*
+
+# --------------------------------------
+# To Track
+# --------------------------------------
+
+# MU-Plugins
+
+# !dist/html/wp-content/mu-plugins/my-single-file-plugin.php
+# !dist/html/wp-content/mu-plugins/my-directory-plugin/
+
+# Plugins
+
+# !dist/html/wp-content/plugins/my-single-file-plugin.php
+# !dist/html/wp-content/plugins/my-directory-plugin/
+
+!dist/html/wp-content/plugins/admin-menu-editor/
+!dist/html/wp-content/plugins/advanced-custom-fields-pro/
+!dist/html/wp-content/plugins/backupwordpress/
+!dist/html/wp-content/plugins/custom-post-type-ui/
+!dist/html/wp-content/plugins/enable-media-replace/
+!dist/html/wp-content/plugins/sumome/
+
+# Themes
+
+!dist/html/wp-content/themes/upgrade/

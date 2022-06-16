@@ -1,0 +1,185 @@
+	/* Credit Health Insights */
+
+	.s-credit-health-insights {
+
+		padding: 0 20px;
+		background: rgb(250, 249, 248);
+		border-top: 1px solid rgb(219, 216, 214);
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-credit-health-insights__inner-wrap {
+
+			padding: 58px 0 53px 0;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 74px 0 67px 0;
+
+			}
+
+		}
+
+			.c-credit-health-insights {
+
+				width: 100%;
+				max-width: 1150px;
+				margin: 0 auto;
+
+			}
+
+				.c-credit-health-insights__headline {
+
+					margin: 0;
+					letter-spacing: 0.19px;
+					color: $color-secondary-blue;
+
+					@media screen and (min-width: 1000px) {
+
+						@include font-size(32);
+						line-height: (42/32);
+						letter-spacing: 0.20px;
+						text-align: center;
+
+					}
+
+				}
+
+				.c-credit-health-insights__description {
+
+					margin: ((21 / 18) + em) 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: ((9 / 18) + em) 0 0 0;
+						text-align: center;
+
+					}
+
+					p {
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+				.c-credit-health-insights__list {
+
+					margin: 71px 0 0 0;
+
+					@media screen and (min-width: 1000px) {
+
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: space-between;
+						align-items: flex-start;
+						align-content: flex-start;
+						margin: 63px 0 0 0;
+
+					}
+
+				}
+
+					.c-credit-health-insights__item {
+
+						margin: 0 0 45px 0;
+
+						@media screen and (min-width: 1000px) {
+
+							width: calc(25% - 14px);
+							margin: 0;
+
+						}
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+						.c-credit-health-insights__item-link {
+
+							color: $black;
+							text-decoration: none;
+
+						}
+
+							.c-credit-health-insights__thumbnail {}
+
+								.c-credit-health-insights__image {}
+
+							.c-credit-health-insights__title {
+
+								margin: ((17 / 18) + em) 0 0 0;
+								@include font-size(18);
+								line-height: (24/18);
+								@include graphik-regular;
+
+							}
+
+				.c-credit-health-insights__more {
+
+					display: block;
+					width: 100%;
+					max-width: 250px;
+					margin: ((57 / 18) + em) auto 0 auto;
+					@include font-size(18);
+					line-height: (24/18);
+					@include graphik-medium;
+					letter-spacing: 0.56px;
+					text-align: center;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: ((41 / 18) + em) auto 0 auto;
+
+					}
+
+				}
+
+					.c-credit-health-insights__more-link {
+
+						display: block;
+						padding: ((13 / 18) + em);
+						color: $color-secondary-green;
+						text-decoration: none;
+						border: 2px solid $color-secondary-green;
+						border-radius: 3px;
+
+						@media screen and (min-width: 1000px) {}
+
+						&:hover {
+
+							color: $white;
+							background: $color-secondary-green;
+							border-color: rgba($color-secondary-blue, 0.08);
+
+						}
+
+					}

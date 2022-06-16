@@ -1,0 +1,542 @@
+/*--------------------------------------
+	Header
+--------------------------------------*/
+
+// Notes...
+
+.l-header {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 0 20px; // Temporary...
+	z-index: 100;
+
+	@media screen and (min-width: 360px) {
+
+		padding: 0 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px; // Temporary...
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		// padding: 0 80px; // Temporary...
+
+	}
+
+}
+
+	.l-header__wrap {
+
+		position: relative;
+		height: 62px;
+
+		@media screen and (min-width: 1000px) {
+
+			width: 100%;
+			max-width: 1320px;
+			height: 96px;
+			margin: 0 auto;
+
+		}
+
+	}
+
+		/* Logo */
+
+		.c-primary-logo {
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -16px;
+			z-index: 1;
+
+			@media screen and (min-width: 1000px) {
+
+				margin-top: -21px;
+
+			}
+
+		}
+
+			.c-primary-logo__link {
+
+				display: block;
+				width: 137px;
+				height: 32px;
+				background: url(../img/logo-horizontal-outline.svg);
+				@include hide-text;
+
+				// Sometimes the logo needs to be reversed due to the background image within the hero...
+
+				// About Us
+
+				.page-id-15 &,
+				.page-id-17 &,
+				.single-release & {
+
+					background-image: url(../img/logo-horizontal-outline-reversed.svg);
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					width: 177px;
+					height: 43px;
+					background-image: url(../img/logo-horizontal-stripes.svg);
+
+					// Sometimes the logo needs to be reversed due to the background image within the hero...
+
+					// Temporary adjustments for Personal Credit Line, About Us, and Press Room pages...
+
+					.page-id-11 &,
+					.page-id-15 &,
+					.page-id-17 &,
+					.single-release & {
+
+						background-image: url(../img/logo-horizontal-stripes-reversed.svg);
+
+					}
+
+				}
+
+			}
+
+		// Toggle (to Open)
+
+		.c-small-screen-nav {
+
+			@media screen and (min-width: 1000px) {
+
+				display: none;
+
+			}
+
+		}
+
+			.c-small-screen-nav__button {
+
+				position: absolute;
+				right: 41px;
+				bottom: 20px;
+				@include graphik-medium;
+				z-index: 1;
+
+			}
+
+				.c-small-screen-nav__button-link {
+
+					color: $color-secondary-blue;
+					text-decoration: none;
+
+					// Sometimes the link needs to be reversed due to the background image within the hero...
+
+					// About Us
+
+					.page-id-15 &,
+					.page-id-17 &,
+					.single-release & {
+
+						color: $white;
+
+					}
+
+				}
+
+			.c-small-screen-nav__toggle {
+
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -20px;
+				cursor: pointer;
+				@include hide-text;
+				z-index: 1;
+
+				span {
+
+					display: block;
+					width: 30px;
+					height: 40px;
+					background: url(../img/nav-toggle.svg) center center no-repeat;
+					background-size: 30px 12px;
+
+					// Sometimes the toggle needs to be reversed due to the background image within the hero...
+
+					// About Us
+
+					.page-id-15 &,
+					.page-id-17 &,
+					.single-release & {
+
+						background-image: url(../img/nav-toggle-reversed.svg);
+
+					}
+
+				}
+
+			}
+
+		/* Primary Nav */
+
+		.c-primary-nav {
+
+			position: fixed;
+			right: -330px;
+			top: 0;
+			width: 330px;
+			height: 100%;
+			padding: 75px 0 0 67px;
+			background: $white;
+			transition: right 0.25s ease-in-out;
+			z-index: 200;
+
+			@media screen and (min-width: 1000px) {
+
+				position: static;
+				right: auto;
+				top: auto;
+				width: auto;
+				height: auto;
+				padding: 0;
+				background: none;
+				box-shadow: none;
+				z-index: 1;
+
+			}
+
+			&.c-primary-nav--is-open {
+
+				right: 0;
+				box-shadow: -2px 0 50px 0 rgb(219, 216, 214);
+
+			}
+
+		}
+
+			// Toggle (to Close)
+
+			.c-primary-nav__toggle {
+
+				position: absolute;
+				left: 21px;
+				top: 18px;
+				padding: 0 0 0 45px;
+				cursor: pointer;
+				z-index: 1;
+
+				@media screen and (min-width: 1000px) {
+
+					display: none;
+
+				}
+
+				&:before {
+
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 30px;
+					height: 12px;
+					margin-top: -6px;
+					background: url(../img/nav-toggle.svg);
+					z-index: 1;
+
+				}
+
+				span {
+
+					@include graphik-medium;
+					text-transform: uppercase;
+					letter-spacing: 0.56px;
+					color: $color-secondary-green;
+
+				}
+
+			}
+
+			// Site Navigation
+
+			.c-primary-nav__list {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+
+				@media screen and (min-width: 1000px) {
+
+					position: absolute;
+					right: 125px;
+					bottom: 35px;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: flex-start;
+					align-items: flex-start;
+					align-content: flex-start;
+					z-index: 1;
+
+				}
+
+			}
+
+				.c-primary-nav__item {
+
+					margin: 0 0 ((26 / 18) + em) 0;
+					@include graphik-medium;
+					letter-spacing: 0.56px;
+
+					@media screen and (min-width: 1000px) {
+
+						position: relative;
+						margin: 0 22px 0 0;
+						padding: 0 22px 0 0;
+						@include graphik-medium;
+						letter-spacing: 0.56px;
+
+						&:after {
+
+							content: "";
+							position: absolute;
+							right: 0;
+							top: 50%;
+							width: 1px;
+							height: 15px;
+							margin: -6px 0 0 0;
+							background: $color-gray-06;
+							z-index: 1;
+
+							// Sometimes the logo needs to be reversed due to the background image within the hero...
+
+							// Temporary adjustments for Personal Credit Line, About Us, and Press Room pages...
+
+							.page-id-11 &,
+							.page-id-15 &,
+							.page-id-17 &,
+							.single-release & {
+
+								background: $white;
+
+							}
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+						@media screen and (min-width: 1000px) {
+
+							padding: 0;
+
+							&:after {
+
+								content: none;
+
+							}
+
+						}
+
+					}
+
+					// Temporary...
+
+					&.c-primary-nav__item--is-current {
+
+						.c-primary-nav__link {
+
+							color: $color-primary-green;
+
+						}
+
+					}
+
+				}
+
+					.c-primary-nav__link {
+
+						color: $color-secondary-blue;
+						text-decoration: none;
+
+						&:hover {
+
+							color: $color-secondary-green;
+
+						}
+
+						@media screen and (min-width: 1000px) {
+
+							color: $color-secondary-gray;
+
+							// Sometimes the logo needs to be reversed due to the background image within the hero...
+
+							// Temporary adjustments for Personal Credit Line, About Us, and Press Room pages...
+
+							.page-id-11 &,
+							.page-id-15 &,
+							.page-id-17 &,
+							.single-release & {
+
+								color: $white;
+
+							}
+
+						}
+
+					}
+
+					.page-id-9 .c-primary-nav__item:nth-child(1) > a,
+					.page-id-11 .c-primary-nav__item:nth-child(2) > a,
+					.page-id-13 .c-primary-nav__item:nth-child(3) > a,
+					.single-loan .c-primary-nav__item:nth-child(1) > a {
+
+						color: $color-secondary-green;
+
+					}
+
+						.c-primary-nav__sub-list {
+
+							margin: ((27 / 18) + em) 0 ((35 / 18) + em) 0;
+							padding: 0;
+							list-style: none;
+
+							@media screen and (min-width: 1000px) {
+
+								display: none;
+
+							}
+
+						}
+
+							.c-primary-nav__sub-item {
+
+								position: relative;
+								margin: 0 0 ((16 / 18) + em) 0;
+								padding: 0 0 0 30px;
+								@include graphik-regular;
+
+								&:before {
+
+									content: "";
+									position: absolute;
+									left: 5px;
+									top: 50%;
+									width: 10px;
+									height: 2px;
+									background: $color-primary-green;
+									z-index: 1;
+
+								}
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+								// Temporary...
+
+								&.c-primary-nav__sub-item--is-current {
+
+									.c-primary-nav__sub-link {
+
+										color: $color-primary-green;
+
+									}
+
+								}
+
+							}
+
+								.c-primary-nav__sub-link {
+
+									color: inherit;
+									text-decoration: inherit;
+
+									&:hover {
+
+										color: $color-secondary-green;
+
+									}
+
+								}
+
+							.postid-42 .c-primary-nav__sub-item:nth-child(1) > a,
+							.postid-43 .c-primary-nav__sub-item:nth-child(2) > a,
+							.postid-44 .c-primary-nav__sub-item:nth-child(3) > a,
+							.postid-45 .c-primary-nav__sub-item:nth-child(4) > a {
+
+								color: $color-secondary-green;
+
+							}
+
+			// Sign In
+
+			.c-primary-nav__button {
+
+				width: 100%;
+				max-width: 190px;
+				margin: ((69 / 18) + em) 0 0 0;
+				@include graphik-medium;
+				text-align: center;
+
+				@media screen and (min-width: 1000px) {
+
+					position: absolute;
+					right: 0;
+					bottom: 27px;
+					width: auto;
+					max-width: none;
+					z-index: 1;
+
+				}
+
+			}
+
+				.c-primary-nav__button-link {
+
+					display: block;
+					padding: ((11 / 18) + em);
+					color: $color-secondary-gray;
+					border: 2px solid $color-gray-03;
+					border-radius: 3px;
+					text-decoration: none;
+
+					@media screen and (min-width: 1000px) {
+
+						padding: ((6 / 18) + em) ((10 / 18) + em);
+
+						// Sometimes the logo needs to be reversed due to the background image within the hero...
+
+						// Temporary adjustments for Personal Credit Line, About Us, and Press Room pages...
+
+						.page-id-11 &,
+						.page-id-15 &,
+						.page-id-17 &,
+						.single-release & {
+
+							color: $white;
+
+						}
+
+					}
+
+					&:hover {
+
+						background: $color-gray-02;
+						border-color: $color-gray-03;
+
+					}
+
+				}

@@ -1,0 +1,97 @@
+	/* Take a Step */
+
+	.s-take-a-step {
+
+		position: relative;
+		padding: 0 20px;
+		overflow: hidden;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-take-a-step__inner-wrap {
+
+			padding: 90px 0 105px 0;
+
+		}
+
+			.c-take-a-step {}
+
+				.c-take-a-step__headline {
+
+					margin: 0;
+					@include font-size(48);
+					line-height: (53/48);
+					@include graphik-light;
+					letter-spacing: 0.38px;
+					text-align: center;
+					color: $white;
+					text-shadow: 0 0 15px 0 rgba($black, 0.20);
+
+				}
+
+				.c-take-a-step__detail {
+
+					width: 100%;
+					max-width: 1024px;
+					margin: 46px auto 0 auto;
+					@include font-size(18);
+					line-height: (18/18);
+					color: $white;
+					text-shadow: 0 0 15px 0 rgba($black, 0.20);
+
+					p {
+
+						margin: 0 0 ((18 / 18) + em) 0;
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+			.c-take-a-step__picture {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				// display: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: -1;
+
+				@media screen and (min-width: 1000px) {
+
+					display: block;
+
+				}
+
+			}
+
+				.c-take-a-step__image {
+
+					max-width: none;
+					height: 100%;
+
+				}

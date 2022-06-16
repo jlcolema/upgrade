@@ -1,0 +1,90 @@
+/*--------------------------------------
+	Section: Reviews
+--------------------------------------*/
+
+// Notes...
+
+.s-reviews {
+
+	padding: 0 10px;
+	border-top: 1px solid rgb(232, 230, 228);
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+}
+
+	.s-reviews__inner-wrap {
+
+		width: 100%;
+		max-width: 1260px;
+		margin: 0 auto;
+		padding: 92px 0 109px 0;
+
+		@media screen and (min-width: 1000px) {
+
+			padding: 107px 0 60px 0;
+
+		}
+
+	}
+
+		.c-reviews {}
+
+			.c-reviews__carousel {}
+
+			.c-reviews__more {
+
+				display: block;
+				width: 100%;
+				max-width: 250px;
+				margin: ((44 / 16) + em) auto 0 auto;
+				@include font-size(16);
+				line-height: (20/16);
+				letter-spacing: 0.50px;
+				text-align: center;
+
+				@media screen and (min-width: 1000px) {
+
+					max-width: 300px;
+					@include font-size(18);
+					line-height: (24/18);
+					@include graphik-medium;
+
+				}
+
+			}
+
+				.c-reviews__more-link {
+
+					display: block;
+					padding: ((13 / 16) + em);
+					color: $color-secondary-green;
+					text-decoration: none;
+					border: 2px solid $color-secondary-green;
+					border-radius: 2px;
+
+					@media screen and (min-width: 1000px) {
+
+						padding: ((11 / 18) + em);
+
+					}
+
+					&:hover {
+
+						color: $white;
+						background: $color-secondary-green;
+						border-color: rgba($color-secondary-blue, 0.08);
+
+					}
+
+				}

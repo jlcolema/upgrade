@@ -1,0 +1,253 @@
+	/* Press Room */
+
+	.s-press-room {
+
+		padding: 0 20px;
+
+		@media screen and (min-width: 360px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 600px) {
+
+			padding: 0 60px;
+
+		}
+
+		@media screen and (min-width: 900px) {
+
+			padding: 0 80px;
+
+		}
+
+	}
+
+		.s-press-room__inner-wrap {
+
+			padding: 178px 0 0 0;
+
+		}
+
+			.c-press-room {
+
+				width: 100%;
+				max-width: 1080px;
+				margin: 0 auto;
+
+			}
+
+				.c-press-room__headline {
+
+					margin: 0;
+					@include font-size(64);
+					line-height: (73/64);
+					@include graphik-light;
+					letter-spacing: 0.50px;
+					text-align: center;
+					color: $white;
+
+				}
+
+				.c-press-room__page {
+
+					margin: 58px 0 0 0;
+					padding: 80px 20px 73px 20px;
+					background: $white;
+					border-radius: 2px;
+
+					@media screen and (min-width: 360px) {
+
+						padding: 80px 30px 73px 30px;
+
+					}
+
+					@media screen and (min-width: 600px) {
+
+						padding: 80px 90px 73px 90px;
+
+					}
+
+				}
+
+					.c-press-room__articles {}
+
+						.c-press-room__article {
+
+							margin: 0 0 59px 0;
+
+							&:last-of-type {
+
+								margin: 0;
+
+							}
+
+						}
+
+							.c-press-room__article-title {
+
+								margin: 0;
+								@include font-size(24);
+								line-height: (24/24);
+
+							}
+
+								.c-press-room__article-title-link {
+
+									color: $color-secondary-blue;
+									text-decoration: none;
+
+								}
+
+							.c-press-room__article-subhead {
+
+								margin: ((4 / 18) + em) 0 0 0;
+								@include font-size(18);
+								line-height: (24/18);
+								@include graphik-semibold;
+								color: rgb(145, 148, 154);
+
+							}
+
+							.c-press-room__article-detail {
+
+								margin: 39px 0 0 0;
+								padding: 0 0 0 16px;
+								border-left: 3px solid $color-secondary-green;
+								overflow-wrap: break-word;
+
+								@media screen and (min-width: 360px) {
+
+									padding: 0 0 0 23px;
+
+								}
+
+							}
+
+								.c-press-room__article-meta {
+
+									line-height: (16/18);
+									@include graphik-medium;
+									color: $color-secondary-blue;
+
+								}
+
+									.c-press-room__article-location {
+
+										text-transform: uppercase;
+
+									}
+
+									.c-press-room__article-date {}
+
+								.c-press-room__article-excerpt {
+
+									margin: ((9 / 18) + em) 0 0 0;
+									@include font-size(18);
+									line-height: (26/18);
+									color: $color-secondary-blue;
+
+									p {
+
+										&:last-of-type {
+
+											margin: 0;
+
+										}
+
+									}
+
+								}
+
+								.c-press-room__article-more {
+
+									margin: ((18 / 16) + em) 0 0 0;
+									@include font-size(16);
+									line-height: (20/16);
+									@include graphik-medium;
+
+								}
+
+									.c-press-room__article-more-link {
+
+										color: $color-secondary-blue;
+										text-decoration: none;
+										border-bottom: 1px solid $color-primary-blue;
+
+									}
+
+					.c-press-room__media-inquiries {
+
+						margin: 110px 0 0 0;
+
+					}
+
+						.c-press-room__media-inquiries-title {
+
+							margin: 0;
+							@include font-size(18);
+							line-height: (24/18);
+							color: $color-secondary-blue;
+
+						}
+
+						.c-press-room__media-inquiries-email {
+
+							margin: ((4 / 18) + em) 0 0 0;
+
+						}
+
+							.c-press-room__media-inquiries-link {
+
+								color: rgb(138, 138, 141);
+								text-decoration: none;
+
+							}
+
+					.c-press-room__brand-assets {
+
+						margin: 21px 0 0 0;
+
+					}
+
+						.c-press-room__brand-assets-title {
+
+							margin: 0;
+							@include font-size(18);
+							line-height: (24/18);
+							color: $color-secondary-blue;
+
+						}
+
+						.c-press-room__brand-assets-list {
+
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							justify-content: flex-start;
+							align-items: flex-start;
+							align-content: flex-start;
+							margin: 1px 0 0 0;
+							padding: 0;
+							list-style: none;
+
+						}
+
+							.c-press-room__brand-assets-item {
+
+								margin: 10px 10px 0 0;
+								background: pink;
+
+							}
+
+								.c-press-room__brand-assets-link {
+
+									display: block;
+									border: 1px solid rgb(219, 216, 214);
+
+								}
+
+									.c-press-room__brand-assets-thumbnail {}
+
+										.c-press-room__brand-assets-image {}

@@ -1,0 +1,247 @@
+/*--------------------------------------
+	Section: Subnavigation
+--------------------------------------*/
+
+// Notes...
+
+.s-subnavigation {
+
+	display: none;
+
+	width: 100%;
+	padding: 0 40px;
+	border-bottom: 1px solid $color-secondary-green;
+	background: $white;
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		// padding: 0 80px;
+
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		display: block;
+
+	}
+
+	// While fixed...
+
+	&.s-subnavigation--is-fixed {
+
+		position: fixed;
+		left: 0;
+		top: 0;
+		z-index: 200;
+
+	}
+
+}
+
+	.s-subnavigation__inner-wrap {
+
+		position: relative;
+		width: 100%;
+		max-width: 1320px;
+		height: 100px;
+		margin: 0 auto;
+		padding: 16px 238px 35px 238px;
+		// background: pink;
+
+	}
+
+		.c-subnavigation {}
+
+			.c-subnavigation__logo {
+
+				// Temporarily hidden...
+
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				margin-top: -21px;
+				z-index: 1;
+
+				// While this section is in a fixed position, display the logo...
+
+				.s-subnavigation--is-fixed & {
+
+					display: block;
+
+				}
+
+			}
+
+				.c-subnavigation__logo-link {
+
+					display: block;
+					width: 177px;
+					height: 43px;
+					background: url(../img/logo-horizontal-stripes.svg);
+					@include hide-text;
+
+				}
+
+			.c-subnavigation__nav {
+
+				width: 100%;
+				// max-width: 844px;
+				// margin: 0 auto;
+				// background: yellow;
+
+			}
+
+				.c-subnavigation__section {
+
+					@include font-size(12);
+					line-height: (12/12);
+					@include graphik-medium;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+
+				}
+
+					.c-subnavigation__section-link {
+
+						color: $color-gray-06;
+						text-decoration: none;
+
+					}
+
+				.c-subnavigation__list {
+
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: flex-start;
+					align-items: flex-start;
+					align-content: flex-start;
+					margin: ((10 / 18) + em) 0 0 0;
+					padding: 0;
+					list-style: none;
+
+				}
+
+					.c-subnavigation__item {
+
+						position: relative;
+						margin: 0 20px 0 0;
+						padding: 0 20px 0 0;
+						@include graphik-medium;
+						letter-spacing: 0.56px;
+
+						&:after {
+
+							content: "";
+							position: absolute;
+							right: 0;
+							top: 6px;
+							bottom: 3px;
+							width: 1px;
+							margin: 0;
+							background: $color-gray-06;
+							z-index: 1;
+
+						}
+
+						&:last-of-type {
+
+							margin: 0;
+							padding: 0;
+
+							&:after {
+
+								content: none;
+
+							}
+
+						}
+
+					}
+
+						.c-subnavigation__item-link {
+
+							color: $color-secondary-blue;
+							text-decoration: none;
+
+							&:hover {
+
+								color: $color-secondary-green;
+
+							}
+
+							@media screen and (min-width: 1000px) {
+
+								color: $color-secondary-gray;
+
+							}
+
+						}
+
+					.postid-42 .c-subnavigation__item:nth-child(1) > a,
+					.postid-43 .c-subnavigation__item:nth-child(2) > a,
+					.postid-44 .c-subnavigation__item:nth-child(3) > a,
+					.postid-45 .c-subnavigation__item:nth-child(4) > a {
+
+						color: $color-secondary-green;
+
+					}
+
+			.c-subnavigation__more {
+
+				display: none;
+				position: absolute;
+				width: 100%;
+				max-width: 192px;
+				right: 0;
+				top: 17px;
+				z-index: 1;
+
+				// While this section is in a fixed position, display the button...
+
+				.s-subnavigation--is-fixed & {
+
+					display: block;
+
+				}
+
+			}
+
+				.c-subnavigation__button {
+
+					@include font-size(18);
+					line-height: (24/18);
+					@include graphik-medium;
+					letter-spacing: 0.56px;
+					text-align: center;
+
+				}
+
+					.c-subnavigation__button-link {
+
+						display: block;
+						padding: ((6 / 18) + em);
+						color: $white;
+						background: $color-primary-green;
+						border: 2px solid rgba($color-secondary-blue, 0.10);
+						border-radius: 2px;
+						cursor: pointer;
+
+					}
+
+				.c-subnavigation__note {
+
+					margin: ((5 / 12) + em) 0 0 0;
+					@include font-size(12);
+					line-height: (14/12);
+					text-align: center;
+					color: rgb(138, 138, 141);
+
+				}

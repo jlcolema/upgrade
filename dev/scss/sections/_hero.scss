@@ -1,0 +1,2266 @@
+/*--------------------------------------
+	Section: Hero
+--------------------------------------*/
+
+// Notes...
+
+
+.s-hero {
+
+	position: relative;
+	padding: 0 20px;
+	// background: pink;
+	border-bottom: 1px solid $color-gray-03;
+	// overflow-y: hidden;
+
+	@media screen and (min-width: 360px) {
+
+		padding: 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		border-bottom: none;
+
+	}
+
+}
+
+	.s-hero__inner-wrap {
+
+		// Need to fix this...
+
+		// Home
+
+		.page-id-7 & {
+
+			padding: 100px 0 76px 0;
+
+		}
+
+		// Personal Credit Line
+
+		.page-id-11 & {
+
+			padding: 132px 0 70px 0;
+
+		}
+
+		// Credit Health
+
+		.page-id-13 & {
+
+			padding: 132px 0 78px 0;
+
+		}
+
+		// About Us
+
+		.page-id-15 & {
+
+			padding: 156px 0 82px 0;
+
+		}
+
+		// Personal Loans
+
+		.page-id-9 & {
+
+			padding: 100px 0 78px 0;
+
+		}
+
+		// Single Loan
+
+		.single-loan & {
+
+			padding: 100px 0 78px 0;
+
+		}
+
+		@media screen and (min-width: 1000px) {
+
+			// Need to fix this...
+
+			// Home
+
+			.page-id-7 & {
+
+				padding: 132px 0 126px 0;
+
+			}
+
+			// Personal Credit Line
+
+			.page-id-11 & {
+
+				padding: 125px 0 114px 0;
+
+			}
+
+			// Credit Health
+
+			.page-id-13 & {
+
+				padding: 115px 0 142px 0;
+
+			}
+
+			// About Us
+
+			.page-id-15 & {
+
+				padding: 176px 0 120px 0;
+
+			}
+
+			// Personal Loans
+
+			.page-id-9 & {
+
+				padding: 110px 0 94px 0;
+
+			}
+
+			// Single Loan
+
+			.single-loan & {
+
+				padding: 132px 0 60px 0;
+
+			}
+
+		}
+
+	}
+
+		// Home
+
+		.c-home-hero {
+
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 39px 118px 52px 118px;
+				background: rgba($white, 0.95);
+				border-radius: 2px;
+
+			}
+
+		}
+
+			.c-home-hero__header {
+
+				margin: 0;
+				@include graphik-bold;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					@include font-size(60);
+					line-height: (93/60);
+					@include graphik-black;
+					// letter-spacing: 0.47px;
+					text-align: center;
+
+				}
+
+			}
+
+			.c-home-hero__form {}
+
+				.c-home-hero__fieldset {}
+
+					.c-home-hero__legend {
+
+						padding: ((17 / 18) + em) 0 0 0; // margin not working?
+						text-align: left;
+
+						@media screen and (min-width: 1000px) {
+
+							padding: ((4 / 26) + em) 0 0 0; // margin not working?
+							@include font-size(26);
+							line-height: (32/26);
+							letter-spacing: -0.16px;
+							text-align: center;
+
+						}
+
+					}
+
+					.c-home-hero__fields {
+
+						margin: 29px 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							display: flex;
+							flex-direction: row;
+							flex-wrap: nowrap;
+							justify-content: flex-start;
+							align-items: flex-start;
+							align-content: flex-start;
+							// margin: 27px 0 0 0;
+
+						}
+
+					}
+
+						.c-home-hero__form-list {
+
+							margin: 0;
+							padding: 0;
+							list-style: none;
+
+							@media screen and (min-width: 1000px) {
+
+								display: flex;
+								flex-direction: row;
+								flex-wrap: nowrap;
+								justify-content: flex-start;
+								align-items: flex-start;
+								align-content: flex-start;
+								width: 66.666666667%;
+
+							}
+
+						}
+
+							.c-home-hero__form-list-item {
+
+								position: relative;
+								margin: 0 0 4px 0;
+
+								@media screen and (min-width: 1000px) {
+
+									width: 50%;
+									margin: 0;
+
+								}
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+								// For Loan Amount Field
+
+								&.money {
+
+									&:before {
+
+										content: "$";
+										position: absolute;
+										left: 10px;
+										bottom: 12px;
+										@include font-size(24);
+										line-height: (30/24);
+										@include roboto-medium;
+										color: $color-primary-blue;
+
+									}
+
+								}
+
+							}
+
+								.c-home-hero__label {
+
+									position: absolute;
+									left: 12px;
+									top: 10px;
+									z-index: 1;
+
+								}
+
+								.c-home-hero__input[type="tel"] {
+
+									@include font-size(22);
+									line-height: (28/22);
+									@include graphik-medium;
+									padding: 36px 10px 12px 27px;
+									color: $color-primary-blue;
+
+								}
+
+								.c-home-hero__select {}
+
+								.dropdown-options {
+
+									// display: none !important;
+
+								}
+
+							// For Dropdown
+
+							.c-home-hero .input.dropdown {
+
+								@media screen and (min-width: 1000px) {
+
+									width: calc(50% + 2px);
+
+								}
+
+							}
+
+							.c-home-hero .input.dropdown > a.current {
+
+								display: block;
+								width: 100%;
+								// min-width: 200px;
+								margin: 0;
+								@include font-size(22);
+								line-height: (28/22);
+								@include graphik-medium;
+								padding: 36px 36px 12px 10px;
+								text-decoration: none;
+								color: $color-primary-blue;
+								border: 2px solid $color-primary-green;
+								border-radius: 2px;
+								background: #fff;
+								transition: all .2s ease-in-out;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+
+								@media screen and (min-width: 1000px) {
+
+									@include font-size(18);
+									line-height: (28/18);
+									border-bottom: none;
+									border-radius: 0;
+
+								}
+
+								.initial {
+
+									display: block;
+									height: 28px;
+
+								}
+
+							}
+
+							.c-home-hero .input.dropdown > a.current.active,
+							.c-home-hero .input.dropdown > a.current:active,
+							.c-home-hero .input.dropdown > a.current:focus {
+
+								border: 2px solid $color-primary-blue;
+								box-shadow: 0 0 5px $color-primary-blue;
+
+							}
+
+							.c-home-hero .input.dropdown > a.current:focus {
+
+								outline: none;
+							}
+
+							.c-home-hero .input.dropdown > a.current > span {
+
+								font-size: inherit;
+								font-weight: 400;
+								color: #c4c9d8;
+
+							}
+
+							@media (min-width: 1000px) {
+
+								.c-home-hero .input.dropdown > a.current {
+
+									border-right: 0;
+									border-bottom: 2px solid $color-primary-green;
+
+								}
+
+							}
+
+							.c-home-hero .input.dropdown .arrow-marker {
+
+								position: absolute;
+								right: 16px;
+								bottom: 23px;
+								width: 11px;
+								height: 8px;
+								background: url(../img/dropdown-arrow.svg);
+
+							}
+
+							.c-home-hero .input.dropdown .arrow-marker > img {
+
+								width: 100%;
+								vertical-align: top;
+
+							}
+
+							.c-home-hero .input.dropdown select {
+
+								// display: none;
+								position: absolute;
+								top: 0;
+								z-index: -1;
+								visibility: visible;
+
+							}
+
+							.c-home-hero .dropdown-options {
+
+								position: absolute;
+								top: calc(100% + 3px);
+								display: none;
+								width: 100%;
+								max-height: 300px;
+								margin: 0;
+								padding: 0;
+								list-style-type: none;
+								text-align: left;
+								border: 1px solid $color-primary-blue;
+								border-radius: 3px;
+								background: #fff;
+								box-shadow: 0 0 7px $color-primary-blue;
+								overflow-y: auto;
+								z-index: 10;
+
+								li {
+
+									margin: 0;
+									padding: 0;
+									@include font-size(16);
+									line-height: (18/16);
+									border-bottom: 1px solid #e7e5e3;
+
+									&:last-of-type {
+
+										border: none;
+
+									}
+
+								}
+
+									a {
+
+										display: block;
+										padding: 15px 18px;
+										text-decoration: none;
+										color: $color-secondary-blue;
+										cursor: pointer;
+
+									}
+
+							}
+
+
+							.c-home-hero .dropdown:not(.no-hover) ul.dropdown-options a:hover,
+							.c-home-hero ul.dropdown-options a:focus {
+
+								color: #fff;
+								background: $color-primary-blue;
+
+							}
+
+							@media (min-width: 1000px) {
+
+								.c-home-hero > form .controls .input.dropdown {
+
+									margin-top: auto;
+									margin-left: -2px;
+
+								}
+
+							}
+
+							// For Errors
+
+							.c-home-hero__error {
+
+								display: block;
+								opacity: 1;
+								transition: opacity .25s ease-in-out;
+								position: absolute;
+								font-size: 12px;
+								line-height: 16px;
+								background: transparent;
+								margin: 0;
+								padding: 5px 0 0 25px;
+								text-align: left;
+								border: 0 none;
+								color: #e37169;
+
+								&:before {
+
+									content: "__ ";
+									position: absolute;
+									margin-left: -15px;
+									margin-top: -5px;
+
+								}
+
+								&.hidden-error {
+
+									opacity: 0;
+
+								}
+
+							}
+
+						.c-home-hero__button {
+
+							display: block;
+							width: 100%;
+							margin: 4px 0 0 0;
+							padding: ((26 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-medium;
+							text-align: center;
+							color: $white;
+							background: $color-primary-green;
+							border: 2px solid rgba(63, 70, 94, 0.08);
+							border-radius: 2px;
+							text-decoration: none;
+							outline: none;
+
+							@media screen and (min-width: 1000px) {
+
+								width: 33.333333333%; // 1/3
+								margin: 0;
+								border-radius: 0 2px 2px 0;
+
+							}
+
+							&:active,
+							&:focus,
+							&:hover {
+
+								background: $color-secondary-green;
+
+							}
+
+						}
+
+				.c-home-hero__email {
+
+					margin: ((24 / 16) + em) 0 0 0;
+					@include font-size(16);
+					line-height: (20/16);
+					@include graphik-medium;
+					letter-spacing: 0.5px;
+					text-align: center;
+
+					@media screen and (min-width: 1000px) {
+
+						padding: 0 10px 0 0;
+						text-align: right;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: relative;
+						top: 2px;
+						display: inline-block;
+						width: 22px;
+						height: 15px;
+						margin: 0 4px 0 0;
+						background: url(../img/check-your-rate-mail-icon.svg);
+
+					}
+
+				}
+
+					.c-home-hero__email-link {
+
+						color: $color-secondary-gray;
+						border-bottom: 1px solid $color-primary-blue;
+						text-decoration: none;
+
+						&:hover {
+
+							color: $color-primary-blue;
+
+						}
+
+					}
+
+			.c-home-hero__benefits-list {
+
+				margin: ((60 / 18) + em) 0 0 0;
+				padding: 0;
+				list-style: none;
+
+				@media screen and (min-width: 1000px) {
+
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+					align-items: flex-start;
+					align-content: flex-start;
+					width: 100%;
+					max-width: 700px;
+					margin: ((22 / 18) + em) 0 0 0;
+
+				}
+
+			}
+
+				.c-home-hero__benefits-list-item {
+
+					position: relative;
+					margin: 0 0 ((16 / 18) + em) 0;
+					padding: 0 0 0 40px;
+
+					@media screen and (min-width: 1000px) {
+
+						min-width: 232px;
+						margin: ((15 / 18) + em) ((15 / 18) + em) 0 0;
+						padding: 0 0 0 42px;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 10px;
+						top: 3px;
+						width: 16px;
+						height: 16px;
+						background: url(../img/benefits-list-checkmark.svg);
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 12px;
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: ((15 / 18) + em) ((15 / 18) + em) 0 0;
+
+						}
+
+					}
+
+				}
+
+		.c-home-hero__picture {
+
+			// Hide on smaller screens...
+
+			display: none;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				// Display on larger screens...
+
+				display: block;
+
+			}
+
+		}
+
+			.c-home-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		// Personal Loans
+
+		.c-personal-loans-hero {
+
+			width: 100%;
+			max-width: 1050px;
+			margin: 0 auto;
+
+			@media screen and (min-width: 1000px) {
+
+				position: relative;
+				min-height: 450px;
+				padding: 40px 466px 0 0;
+
+			}
+
+		}
+
+			.c-personal-loans-hero__header {
+
+				margin: 0;
+				@include graphik-bold;
+				letter-spacing: 0.12px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					width: 100%;
+					max-width: 540px;
+					@include font-size(64);
+					line-height: (73/64);
+					@include graphik-black;
+					letter-spacing: 0.50px;
+
+				}
+
+			}
+
+			.c-personal-loans-hero__secondary-header {
+
+				margin: ((16 / 24) + em) 0 0 0;
+				@include font-size(24);
+				line-height: (30/24);
+				@include graphik-light;
+				letter-spacing: 0.15px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((20 / 26) + em) 0 0 0;
+					@include font-size(26);
+					line-height: (32/26);
+					letter-spacing: 0.20px;
+
+				}
+
+			}
+
+			.c-personal-loans-hero__form {
+
+				width: 100%;
+				max-width: 300px;
+				margin: 35px 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 416px;
+					max-width: none;
+					height: 450px;
+					margin: 0;
+					padding: 29px 63px 0 63px;
+					background: $white;
+					z-index: 1;
+
+				}
+
+			}
+
+				.c-personal-loans-hero__fieldset {}
+
+					.c-personal-loans-hero__legend {
+
+						padding: 0 0 0 ((7 / 18) + em);
+						text-align: left;
+
+						@media screen and (min-width: 1000px) {
+
+							padding: 0;
+							@include font-size(26);
+							line-height: (32/26);
+							letter-spacing: -0.16px;
+							color: $color-secondary-blue;
+
+						}
+
+					}
+
+					.c-personal-loans-hero__fields {
+
+						margin: 10px 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: 12px 0 0 0;
+
+						}
+
+					}
+
+						.c-personal-loans-hero__form-list {
+
+							margin: 0;
+							padding: 0;
+							list-style: none;
+
+						}
+
+							.c-personal-loans-hero__form-list-item {
+
+								position: relative;
+								margin: 0 0 4px 0;
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+								// For Loan Amount Field
+
+								&.money {
+
+									&:before {
+
+										content: "$";
+										position: absolute;
+										left: 10px;
+										bottom: 12px;
+										@include font-size(24);
+										line-height: (30/24);
+										@include roboto-medium;
+										color: $color-primary-blue;
+
+									}
+
+								}
+
+							}
+
+								.c-personal-loans-hero__label {
+
+									position: absolute;
+									left: 12px;
+									top: 10px;
+									z-index: 1;
+
+								}
+
+								.c-personal-loans-hero__input[type="tel"] {
+
+									@include font-size(22);
+									line-height: (28/22);
+									@include graphik-medium;
+									padding: 36px 10px 12px 27px;
+									color: $color-primary-blue;
+
+								}
+
+								.c-personal-loans-hero__select {}
+
+								.dropdown-options {
+
+									// display: none !important;
+
+								}
+
+							// For Dropdown
+
+							.c-personal-loans-hero .input.dropdown {}
+
+							.c-personal-loans-hero .input.dropdown > a.current {
+
+								display: block;
+								width: 100%;
+								// min-width: 200px;
+								margin: 0;
+								@include font-size(22);
+								line-height: (28/22);
+								@include graphik-medium;
+								padding: 36px 36px 12px 10px;
+								text-decoration: none;
+								color: $color-primary-blue;
+								border: 2px solid $color-primary-green;
+								border-radius: 2px;
+								background: #fff;
+								transition: all .2s ease-in-out;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+
+								.initial {
+
+									display: block;
+									height: 28px;
+
+								}
+
+							}
+
+							.c-personal-loans-hero .input.dropdown > a.current.active,
+							.c-personal-loans-hero .input.dropdown > a.current:active,
+							.c-personal-loans-hero .input.dropdown > a.current:focus {
+
+								border: 2px solid $color-primary-blue;
+								box-shadow: 0 0 5px $color-primary-blue;
+
+							}
+
+							.c-personal-loans-hero .input.dropdown > a.current:focus {
+
+								outline: none;
+							}
+
+							.c-personal-loans-hero .input.dropdown > a.current > span {
+
+								font-size: inherit;
+								font-weight: 400;
+								color: #c4c9d8;
+
+							}
+
+							.c-personal-loans-hero .input.dropdown .arrow-marker {
+
+								position: absolute;
+								right: 16px;
+								bottom: 23px;
+								width: 11px;
+								height: 8px;
+								background: url(../img/dropdown-arrow.svg);
+
+							}
+
+							.c-personal-loans-hero .input.dropdown .arrow-marker > img {
+
+								width: 100%;
+								vertical-align: top;
+
+							}
+
+							.c-personal-loans-hero .input.dropdown select {
+
+								// display: none;
+								position: absolute;
+								top: 0;
+								z-index: -1;
+								visibility: visible;
+
+							}
+
+							.c-personal-loans-hero .dropdown-options {
+
+								position: absolute;
+								top: calc(100% + 3px);
+								display: none;
+								width: 100%;
+								max-height: 300px;
+								margin: 0;
+								padding: 0;
+								list-style-type: none;
+								text-align: left;
+								border: 1px solid $color-primary-blue;
+								border-radius: 3px;
+								background: #fff;
+								box-shadow: 0 0 7px $color-primary-blue;
+								overflow-y: auto;
+								z-index: 10;
+
+								li {
+
+									margin: 0;
+									padding: 0;
+									@include font-size(16);
+									line-height: (18/16);
+									border-bottom: 1px solid #e7e5e3;
+
+									&:last-of-type {
+
+										border: none;
+
+									}
+
+								}
+
+									a {
+
+										display: block;
+										padding: 15px 18px;
+										text-decoration: none;
+										color: $color-secondary-blue;
+										cursor: pointer;
+
+									}
+
+							}
+
+
+							.c-personal-loans-hero .dropdown:not(.no-hover) ul.dropdown-options a:hover,
+							.c-personal-loans-hero ul.dropdown-options a:focus {
+
+								color: #fff;
+								background: $color-primary-blue;
+
+							}
+
+							// For Errors
+
+							.c-personal-loans-hero__error {
+
+								display: block;
+								opacity: 1;
+								transition: opacity .25s ease-in-out;
+								position: absolute;
+								font-size: 12px;
+								line-height: 16px;
+								background: transparent;
+								margin: 0;
+								padding: 5px 0 0 25px;
+								text-align: left;
+								border: 0 none;
+								color: #e37169;
+
+								&:before {
+
+									content: "__ ";
+									position: absolute;
+									margin-left: -15px;
+									margin-top: -5px;
+
+								}
+
+								&.hidden-error {
+
+									opacity: 0;
+
+								}
+
+							}
+
+						.c-personal-loans-hero__button {
+
+							display: block;
+							width: 100%;
+							margin: 4px 0 0 0;
+							padding: ((26 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+							@include font-size(18);
+							line-height: (24/18);
+							@include graphik-medium;
+							text-align: center;
+							color: $white;
+							background: $color-primary-green;
+							border: 2px solid rgba(63, 70, 94, 0.08);
+							border-radius: 2px;
+							text-decoration: none;
+							outline: none;
+
+							&:active,
+							&:focus,
+							&:hover {
+
+								background: $color-secondary-green;
+
+							}
+
+						}
+
+				.c-personal-loans-hero__note {
+
+					position: relative;
+					margin: ((21 / 14) + em) auto 0 auto;
+					padding: 0 25px 0 65px;
+					@include font-size(14);
+					line-height: (20/14);
+
+					@media screen and (min-width: 1000px) {
+
+						padding: 0 20px 0 60px;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 30px;
+						top: 50%;
+						width: 20px;
+						height: 28px;
+						margin-top: -16px;
+						background: url(../img/lock-icon.svg);
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 25px;
+
+						}
+
+					}
+
+				}
+
+			.c-personal-loans-hero__benefits-list {
+
+				margin: ((45 / 18) + em) 0 0 0;
+				padding: 0;
+				list-style: none;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((48 / 18) + em) 0 0 0;
+
+				}
+
+			}
+
+				.c-personal-loans-hero__benefits-list-item {
+
+					position: relative;
+					margin: 0 0 ((16 / 18) + em) 0;
+					padding: 0 0 0 48px;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 0 ((27 / 18) + em) 0;
+						padding: 0 0 0 46px;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 9px;
+						top: 9px;
+						width: 26px;
+						height: 3px;
+						background: $color-secondary-green;
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 7px;
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+		.c-personal-loans-hero__picture {
+
+			// Hide on smaller screens...
+
+			display: none;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				// Display on larger screens...
+
+				display: block;
+
+			}
+
+		}
+
+			.c-personal-loans-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		// Individual Loan Entries
+
+		.c-loan-hero {
+
+			width: 100%;
+			max-width: 1050px;
+			margin: 0 auto;
+
+			@media screen and (min-width: 1000px) {
+
+				position: relative;
+				min-height: 462px;
+				padding: 0 466px 0 0;
+
+			}
+
+		}
+
+			.c-loan-hero__section {
+
+				@include font-size(12);
+				line-height: (12/12);
+				@include graphik-medium;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				color: $color-gray-06;
+
+			}
+
+			.c-loan-hero__header {
+
+				margin: ((8 / 40) + em) 0 0 0;
+				@include graphik-bold;
+				letter-spacing: 0.12px;
+				color: $color-secondary-blue;
+				opacity: 0.97;
+				text-shadow: 0 0 60px $white;
+
+				@media screen and (min-width: 1000px) {
+
+					width: 100%;
+					margin: ((10 / 64) + em) 0 0 0;
+					@include font-size(64);
+					line-height: (73/64);
+					@include graphik-black;
+					letter-spacing: 0.50px;
+
+				}
+
+			}
+
+			.c-loan-hero__form {
+
+				width: 100%;
+				max-width: 300px;
+				margin: 41px 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 416px;
+					max-width: none;
+					height: 450px;
+					margin: 12px 0 0 0;
+					padding: 29px 63px 0 63px;
+					background: $white;
+					z-index: 1;
+
+				}
+
+			}
+
+				.c-loan-hero__fieldset {}
+
+					.c-loan-hero__legend {
+
+						padding: 0 0 0 ((7 / 18) + em);
+						text-align: left;
+
+						@media screen and (min-width: 1000px) {
+
+							padding: 0;
+							@include font-size(26);
+							line-height: (32/26);
+							letter-spacing: -0.16px;
+							color: $color-secondary-blue;
+
+						}
+
+					}
+
+					.c-loan-hero__fields {
+
+						margin: 14px 0 0 0;
+
+						@media screen and (min-width: 1000px) {
+
+							margin: 12px 0 0 0;
+
+						}
+
+					}
+
+						.c-loan-hero__form-list {
+
+							margin: 0;
+							padding: 0;
+							list-style: none;
+
+						}
+
+							.c-loan-hero__form-list-item {
+
+								position: relative;
+								margin: 0 0 4px 0;
+
+								&:last-of-type {
+
+									margin: 0;
+
+								}
+
+								// For Loan Amount Field
+
+								&.money {
+
+									&:before {
+
+										content: "$";
+										position: absolute;
+										left: 10px;
+										bottom: 12px;
+										@include font-size(24);
+										line-height: (30/24);
+										@include roboto-medium;
+										color: $color-primary-blue;
+
+									}
+
+								}
+
+							}
+
+								.c-loan-hero__label {
+
+									position: absolute;
+									left: 12px;
+									top: 10px;
+									z-index: 1;
+
+								}
+
+								.c-loan-hero__input[type="tel"] {
+
+									@include font-size(22);
+									line-height: (28/22);
+									@include graphik-medium;
+									padding: 36px 10px 12px 27px;
+									color: $color-primary-blue;
+
+								}
+
+								.c-loan-hero__select {}
+
+								.dropdown-options {
+
+									// display: none !important;
+
+								}
+
+							// For Dropdown
+
+							.c-loan-hero .input.dropdown {}
+
+							.c-loan-hero .input.dropdown > a.current {
+
+								display: block;
+								width: 100%;
+								// min-width: 200px;
+								margin: 0;
+								@include font-size(22);
+								line-height: (28/22);
+								@include graphik-medium;
+								padding: 36px 36px 12px 10px;
+								text-decoration: none;
+								color: $color-primary-blue;
+								border: 2px solid $color-primary-green;
+								border-radius: 2px;
+								background: #fff;
+								transition: all .2s ease-in-out;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+
+								.initial {
+
+									display: block;
+									height: 28px;
+
+								}
+
+							}
+
+							.c-loan-hero .input.dropdown > a.current.active,
+							.c-loan-hero .input.dropdown > a.current:active,
+							.c-loan-hero .input.dropdown > a.current:focus {
+
+								border: 2px solid $color-primary-blue;
+								box-shadow: 0 0 5px $color-primary-blue;
+
+							}
+
+							.c-loan-hero .input.dropdown > a.current:focus {
+
+								outline: none;
+							}
+
+							.c-loan-hero .input.dropdown > a.current > span {
+
+								font-size: inherit;
+								font-weight: 400;
+								color: #c4c9d8;
+
+							}
+
+							.c-loan-hero .input.dropdown .arrow-marker {
+
+								position: absolute;
+								right: 16px;
+								bottom: 23px;
+								width: 11px;
+								height: 8px;
+								background: url(../img/dropdown-arrow.svg);
+
+							}
+
+							.c-loan-hero .input.dropdown .arrow-marker > img {
+
+								width: 100%;
+								vertical-align: top;
+
+							}
+
+							.c-loan-hero .input.dropdown select {
+
+								// display: none;
+								position: absolute;
+								top: 0;
+								z-index: -1;
+								visibility: visible;
+
+							}
+
+							.c-loan-hero .dropdown-options {
+
+								position: absolute;
+								top: calc(100% + 3px);
+								display: none;
+								width: 100%;
+								max-height: 300px;
+								margin: 0;
+								padding: 0;
+								list-style-type: none;
+								text-align: left;
+								border: 1px solid $color-primary-blue;
+								border-radius: 3px;
+								background: #fff;
+								box-shadow: 0 0 7px $color-primary-blue;
+								overflow-y: auto;
+								z-index: 10;
+
+								li {
+
+									margin: 0;
+									padding: 0;
+									@include font-size(16);
+									line-height: (18/16);
+									border-bottom: 1px solid #e7e5e3;
+
+									&:last-of-type {
+
+										border: none;
+
+									}
+
+								}
+
+									a {
+
+										display: block;
+										padding: 15px 18px;
+										text-decoration: none;
+										color: $color-secondary-blue;
+										cursor: pointer;
+
+									}
+
+							}
+
+
+							.c-loan-hero .dropdown:not(.no-hover) ul.dropdown-options a:hover,
+							.c-loan-hero ul.dropdown-options a:focus {
+
+								color: #fff;
+								background: $color-primary-blue;
+
+							}
+
+							// For Errors
+
+							.c-loan-hero__error {
+
+								display: block;
+								opacity: 1;
+								transition: opacity .25s ease-in-out;
+								position: absolute;
+								font-size: 12px;
+								line-height: 16px;
+								background: transparent;
+								margin: 0;
+								padding: 5px 0 0 25px;
+								text-align: left;
+								border: 0 none;
+								color: #e37169;
+
+								&:before {
+
+									content: "__ ";
+									position: absolute;
+									margin-left: -15px;
+									margin-top: -5px;
+
+								}
+
+								&.hidden-error {
+
+									opacity: 0;
+
+								}
+
+							}
+
+					.c-loan-hero__button {
+
+						display: block;
+						width: 100%;
+						margin: 4px 0 0 0;
+						padding: ((26 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+						@include font-size(18);
+						line-height: (24/18);
+						@include graphik-medium;
+						text-align: center;
+						color: $white;
+						background: $color-primary-green;
+						border: 2px solid rgba(63, 70, 94, 0.08);
+						border-radius: 2px;
+						text-decoration: none;
+						outline: none;
+
+						&:active,
+						&:focus,
+						&:hover {
+
+							background: $color-secondary-green;
+
+						}
+
+					}
+
+				.c-loan-hero__note {
+
+					position: relative;
+					margin: ((21 / 14) + em) auto 0 auto;
+					padding: 0 25px 0 65px;
+					@include font-size(14);
+					line-height: (20/14);
+
+					@media screen and (min-width: 1000px) {
+
+						padding: 0 20px 0 60px;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 30px;
+						top: 50%;
+						width: 20px;
+						height: 28px;
+						margin-top: -16px;
+						background: url(../img/lock-icon.svg);
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 25px;
+
+						}
+
+					}
+
+				}
+
+			.c-loan-hero__benefits-list {
+
+				margin: ((65 / 18) + em) 0 0 0;
+				padding: 0;
+				list-style: none;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((44 / 18) + em) 0 0 0;
+
+				}
+
+			}
+
+				.c-loan-hero__benefits-list-item {
+
+					position: relative;
+					margin: 0 0 ((16 / 18) + em) 0;
+					padding: 0 0 0 48px;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 0 ((27 / 18) + em) 0;
+						padding: 0 0 0 45px;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 9px;
+						top: 9px;
+						width: 26px;
+						height: 3px;
+						background: $color-secondary-green;
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 6px;
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+		.c-loan-hero__picture {
+
+			// Hide on smaller screens...
+
+			display: none;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				// Display on larger screens...
+
+				display: block;
+
+			}
+
+		}
+
+			.c-loan-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		// Personal Credit Line
+
+		.c-personal-credit-line-hero {
+
+			width: 100%;
+			max-width: 968px;
+			margin: 0 auto;
+
+		}
+
+			.c-personal-credit-line-hero__header {
+
+				margin: 0;
+				@include graphik-bold;
+				letter-spacing: 0.12px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					width: 100%;
+					max-width: 670px; // Tweak just to move text to second line; need to set up a better way to handle this.
+					@include font-size(64);
+					line-height: (73/64);
+					letter-spacing: 0.20px;
+					color: $white;
+
+				}
+
+			}
+
+			.c-personal-credit-line-hero__secondary-header {
+
+				margin: ((14 / 24) + em) 0 0 0;
+				@include font-size(24);
+				line-height: (30/24);
+				@include graphik-light;
+				letter-spacing: 0.15px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((12 / 26) + em) 0 0 0;
+					@include font-size(26);
+					line-height: (32/26);
+					@include graphik-regular;
+					letter-spacing: 0.20px;
+					color: $white;
+
+				}
+
+			}
+
+			.c-personal-credit-line-hero__more {
+
+				width: 100%;
+				max-width: 340px;
+				margin: 49px 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: 17px 0 0 0;
+
+				}
+
+			}
+
+				.c-personal-credit-line-hero__more-link {
+
+					display: block;
+					width: 100%;
+					padding: ((27 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+					@include graphik-medium;
+					letter-spacing: 0.56px;
+					text-align: center;
+					color: $white;
+					background: $color-primary-green;
+					border: 2px solid rgba(63, 70, 94, 0.08);
+					border-radius: 2px;
+					text-decoration: none;
+					cursor: pointer;
+
+					&:hover {
+
+						background: $color-secondary-green;
+
+					}
+
+				}
+
+			.c-personal-credit-line-hero__benefits-list {
+
+				margin: ((38 / 18) + em) 0 0 0;
+				padding: 0;
+				list-style: none;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((49 / 18) + em) 0 0 0;
+
+				}
+
+			}
+
+				.c-personal-credit-line-hero__benefits-list-item {
+
+					position: relative;
+					margin: 0 0 ((16 / 18) + em) 0;
+					padding: 0 0 0 40px;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: 0 0 ((17 / 18) + em) 0;
+						padding: 0 0 0 56px;
+						color: $white;
+
+					}
+
+					&:before {
+
+						content: "";
+						position: absolute;
+						left: 10px;
+						top: 3px;
+						width: 16px;
+						height: 16px;
+						background: url(../img/benefits-list-checkmark.svg);
+						z-index: 1;
+
+						@media screen and (min-width: 1000px) {
+
+							left: 18px;
+							background-image: url(../img/benefits-list-checkmark-reversed.svg);
+
+						}
+
+					}
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+			.c-personal-credit-line-hero__overlay {
+
+				width: 100%;
+				max-width: 1000px;
+				margin: 44px auto 0 auto;
+				padding: 40px 30px 55px 30px;
+				background: rgba($color-primary-green, 0.95);
+
+			}
+
+				.c-personal-credit-line-hero__description {
+
+					margin: ((34 / 22) + em) 0 0 0;
+					@include font-size(22);
+					line-height: (32/22);
+					text-align: center;
+					color: $white;
+
+				}
+
+		.c-personal-credit-line-hero__picture {
+
+			// Hide on smaller screens...
+
+			display: none;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				// Display on larger screens...
+
+				display: block;
+
+			}
+
+		}
+
+			.c-personal-credit-line-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		// Credit Health
+
+		.c-credit-health-hero {
+
+			width: 100%;
+			max-width: 794px;
+			margin: 0 auto;
+
+		}
+
+			.c-credit-health-hero__header {
+
+				width: 100%;
+				max-width: 465px;
+				margin: 0;
+				@include graphik-bold;
+				letter-spacing: 0.12px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					@include font-size(64);
+					line-height: (73/64);
+					letter-spacing: 0.20px;
+					color: $white;
+
+				}
+
+			}
+
+			.c-credit-health-hero__secondary-header {
+
+				margin: ((6 / 24) + em) 0 0 0;
+				@include font-size(24);
+				line-height: (30/24);
+				@include graphik-light;
+				letter-spacing: 0.15px;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					width: 100%;
+					max-width: 320px;
+					margin: ((14 / 26) + em) 0 0 0;
+					@include font-size(26);
+					line-height: (32/26);
+					@include graphik-regular;
+					letter-spacing: -0.16px;
+					color: $white;
+
+				}
+
+			}
+
+			.c-credit-health-hero__more {
+
+				width: 100%;
+				max-width: 300px;
+				margin: 49px 0 0 0;
+
+				@media screen and (min-width: 1000px) {
+
+					max-width: 290px;
+					margin: 57px 0 0 0;
+
+				}
+
+			}
+
+				.c-credit-health-hero__more-link {
+
+					display: block;
+					width: 100%;
+					padding: ((27 / 18) + em) ((18 / 18) + em) ((26 / 18) + em) ((18 / 18) + em);
+					@include graphik-medium;
+					letter-spacing: 0.56px;
+					text-align: center;
+					text-transform: uppercase;
+					color: $white;
+					background: $color-primary-green;
+					border: 2px solid rgba(63, 70, 94, 0.08);
+					border-radius: 2px;
+					text-decoration: none;
+					cursor: pointer;
+
+					&:hover {
+
+						background: $color-secondary-green;
+
+					}
+
+				}
+
+			.c-credit-health-hero__note {
+
+				position: relative;
+				width: 100%;
+				max-width: 300px;
+				margin: ((21 / 14) + em) 0 0 0;
+				padding: 0 0 0 47px;
+				@include font-size(14);
+				line-height: (20/14);
+
+				@media screen and (min-width: 1000px) {
+
+					max-width: 290px;
+					margin: ((27 / 14) + em) 0 0 0;
+					padding: 0 0 0 50px;
+					color: $white;
+
+				}
+
+				&:before {
+
+					content: "";
+					position: absolute;
+					left: 9px;
+					top: 50%;
+					width: 20px;
+					height: 28px;
+					margin-top: -16px;
+					background: url(../img/lock-icon.svg);
+					z-index: 1;
+
+					@media screen and (min-width: 1000px) {
+
+						left: 12px;
+						background-image: url(../img/lock-icon-reversed.svg);
+
+					}
+
+				}
+
+			}
+
+		.c-credit-health-hero__picture {
+
+			// Hide on smaller screens...
+
+			display: none;
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				// Display on larger screens...
+
+				display: block;
+
+			}
+
+		}
+
+			.c-credit-health-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		// About Us
+
+		.c-about-us-hero {
+
+			width: 100%;
+			max-width: 1000px;
+			margin: 0 auto;
+
+		}
+
+			.c-about-us-hero__header {
+
+				margin: 0;
+				@include font-size(42);
+				line-height: (73/42);
+				@include graphik-light;
+				letter-spacing: 0.37px;
+				text-align: center;
+				color: $white;
+
+				@media screen and (min-width: 1000px) {
+
+					@include font-size(64);
+					line-height: (73/64);
+					letter-spacing: 0.50px;
+
+				}
+
+			}
+
+			.c-about-us-hero__overlay {
+
+				width: 100%;
+				max-width: 1000px;
+				margin: 36px auto 0 auto;
+				padding: 56px 20px 59px 20px;
+				background: rgba($color-primary-green, 0.95);
+
+				@media screen and (min-width: 360px) {
+
+					padding: 56px 28px 59px 28px;
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					margin: 58px auto 0 auto;
+					padding: 65px 28px 62px 28px;
+
+				}
+
+			}
+
+				.c-about-us-hero__secondary-header {
+
+					margin: 0;
+					@include font-size(16);
+					line-height: (20/16);
+					@include graphik-regular;
+					text-transform: uppercase;
+					letter-spacing: 10px;
+					text-align: center;
+					color: $white;
+
+				}
+
+				.c-about-us-hero__description {
+
+					width: 100%;
+					max-width: 630px;
+					margin: ((34 / 22) + em) auto 0 auto;
+					@include font-size(22);
+					line-height: (32/22);
+					text-align: center;
+					color: $white;
+
+					@media screen and (min-width: 1000px) {
+
+						margin: ((38 / 26) + em) auto 0 auto;
+						@include font-size(26);
+						line-height: (32/26);
+
+					}
+
+					p {
+
+						&:last-of-type {
+
+							margin: 0;
+
+						}
+
+					}
+
+				}
+
+		.c-about-us-hero__picture {
+
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			z-index: -1;
+
+		}
+
+			.c-about-us-hero__background-image {
+
+				position: absolute;
+				left: 50%;
+				top: 0;
+				max-width: none;
+				height: 100%;
+				transform: translate(-50%, 0);
+				z-index: 1;
+
+			}
+
+		/* To Next Section */
+
+		.c-hero__move {
+
+			position: absolute;
+			bottom: 0;
+			right: 20px;
+			@include hide-text;
+			z-index: 25;
+
+			@media screen and (min-width: 360px) {
+
+				right: 40px;
+
+			}
+
+			@media screen and (min-width: 600px) {
+
+				right: auto;
+				left: 50%;
+				margin: 0 0 0 -15px;
+
+			}
+
+		}
+
+			.c-hero__move-link {
+
+				display: block;
+				width: 30px;
+				height: 32px;
+				background: url(../img/scroll-down.svg) center top no-repeat;
+				background-size: 15px 22px;
+
+				// About Us
+
+				.page-id-15 & {
+
+					background-image: url(../img/scroll-down-reversed.svg);
+
+				}
+
+				@media screen and (min-width: 1000px) {
+
+					background-image: url(../img/scroll-down-reversed.svg);
+
+				}
+
+				// .home & {
+
+				// 	@media screen and (min-width: 1000px) {
+
+				// 		background-image: url(../img/scroll-down-reversed.svg);
+
+				// 	}
+
+				// }
+
+				// Personal Credit Line
+
+				// .page-id-11 & {
+
+				// 	background-image: url(../img/scroll-to-top-reversed.svg);
+
+				// }
+
+			}

@@ -1,0 +1,170 @@
+/*--------------------------------------
+	Section: Need Help
+--------------------------------------*/
+
+// Currently, this section is only on the home page.
+
+
+.s-need-help {
+
+	padding: 0 20px;
+
+	@media screen and (min-width: 360px) {
+
+		padding: 0 40px;
+
+	}
+
+	@media screen and (min-width: 600px) {
+
+		padding: 0 60px;
+
+	}
+
+	@media screen and (min-width: 900px) {
+
+		padding: 0 80px;
+
+	}
+
+	@media screen and (min-width: 1000px) {
+
+		position: relative;
+		overflow: hidden;
+
+	}
+
+}
+
+	.s-need-help__inner-wrap {
+
+		width: 100%;
+		max-width: 765px;
+		margin: 0 auto;
+		padding: 40px 0;
+
+		@media screen and (min-width: 1000px) {
+
+			padding: 90px 0 230px 0;
+
+		}
+
+	}
+
+		.c-need-help {
+
+			padding: 41px 30px 55px 30px;
+			background: $white;
+			border-radius: 10px;
+			box-shadow: 0 0 30px 0 rgba($black, 0.10);
+
+			@media screen and (min-width: 360px) {
+
+				padding: 41px 50px 55px 50px;
+
+			}
+
+			@media screen and (min-width: 1000px) {
+
+				padding: 62px 50px 85px 50px;
+
+			}
+
+		}
+
+			.c-need-help__header {
+
+				margin: 0;
+				@include font-size(32);
+				line-height: (42/32);
+				text-align: center;
+				color: $color-secondary-blue;
+
+			}
+
+			.c-need-help__description {
+
+				margin: ((27 / 18) + em) 0 0 0;
+				text-align: center;
+				color: $color-secondary-blue;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((42 / 18) + em) 0 0 0;
+
+				}
+
+				p {
+
+					&:last-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+			}
+
+			.c-need-help__more {
+
+				display: block;
+				width: 100%;
+				max-width: 250px;
+				margin: ((30 / 16) + em) auto 0 auto;
+				@include font-size(16);
+				line-height: (20/16);
+				@include graphik-medium;
+				text-align: center;
+
+				@media screen and (min-width: 1000px) {
+
+					margin: ((49 / 16) + em) auto 0 auto;
+
+				}
+
+			}
+
+				.c-need-help__more-link {
+
+					display: block;
+					padding: ((13 / 16) + em);
+					color: $color-secondary-green;
+					text-decoration: none;
+					border: 2px solid $color-secondary-green;
+					border-radius: 3px;
+
+					&:hover {
+
+						color: $white;
+						background: $color-secondary-green;
+						border-color: rgba($color-secondary-blue, 0.08);
+
+					}
+
+				}
+
+		.c-need-help__picture {
+
+			position: absolute;
+			left: 50%;
+			top: 0;
+			display: none;
+			height: 100%;
+			transform: translate(-50%, 0);
+			z-index: -1;
+
+			@media screen and (min-width: 1000px) {
+
+				display: block;
+
+			}
+
+		}
+
+			.c-need-help__img {
+
+				max-width: none;
+				height: 100%;
+
+			}
