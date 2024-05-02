@@ -1,0 +1,1 @@
+!function(n){n(document).on("ready",function(){}),n(window).on("load",function(){}),n(window).on("resize",function(){})}(window.jQuery);
