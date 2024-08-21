@@ -66,3 +66,9 @@ dist/html/wp-content/themes/*
 # Themes
 
 !dist/html/wp-content/themes/upgrade/
+
+# Miscellaneous
+
+*.nova
+*.code-workspace
+package-lock.json
